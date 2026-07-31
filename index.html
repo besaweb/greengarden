@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="sq" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Garden Restaurant & Resort | Tiranë, Shqipëri</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        botanical: {
+                            50: '#f2f9f4',
+                            100: '#e1f2e5',
+                            200: '#c3e5cb',
+                            300: '#95d1a5',
+                            400: '#5fb578',
+                            500: '#3a9855',
+                            600: '#2a7a42',
+                            700: '#1e683a',
+                            800: '#1b5330',
+                            900: '#174429',
+                            950: '#0a2516',
+                        },
+                        amberGlow: {
+                            50: '#fffcf2',
+                            100: '#fef7dc',
+                            200: '#fdeca7',
+                            400: '#fbbf24',
+                            500: '#d97706',
+                            600: '#b45309',
+                            700: '#92400e',
+                        },
+                        patioLight: '#fbfcf9',
+                        cardLight: '#ffffff',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-panel-light {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(30, 104, 58, 0.12);
+        }
+        .glass-card {
+            background: #ffffff;
+            border: 1px solid rgba(27, 83, 48, 0.08);
+            box-shadow: 0 10px 30px -10px rgba(10, 37, 22, 0.06);
+        }
+        .glow-effect-light {
+            box-shadow: 0 12px 35px -8px rgba(37, 132, 70, 0.18);
+        }
+        .amber-gold-border {
+            border-color: rgba(217, 119, 6, 0.35);
+        }
+        .bg-pattern-light {
+            background-image: radial-gradient(rgba(30, 104, 58, 0.07) 1.5px, transparent 1.5px);
+            background-size: 28px 28px;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f2f9f4;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #95d1a5;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1e683a;
+        }
+    </style>
+</head>
+<body class="bg-patioLight text-stone-800 font-sans antialiased selection:bg-botanical-700 selection:text-white pb-16 md:pb-0">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-botanical-950 text-botanical-100 text-xs py-2.5 px-4 border-b border-botanical-900">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+                <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-amberGlow-400"></i> KM 12, Bërzhitë, Tiranë, Shqipëri</span>
+                <span class="hidden md:flex items-center gap-1.5"><i data-lucide="waves" class="w-3.5 h-3.5 text-amberGlow-400"></i> <span data-i18n="topBarPool">Pishina & Pool Bar hapur çdo ditë 09:00 - 20:00</span></span>
+                <span class="inline-flex items-center gap-1 text-amberGlow-400 font-semibold px-2.5 py-0.5 rounded-full bg-amberGlow-500/15 border border-amberGlow-500/30">
+                    <i data-lucide="sparkles" class="w-3 h-3"></i> <span data-i18n="topBarBadge">Ngjarje Ekskluzive & Saloni i Dasmave</span>
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:+355698090010" class="hover:text-amberGlow-400 transition flex items-center gap-1 font-semibold">
+                    <i data-lucide="phone" class="w-3.5 h-3.5 text-amberGlow-400"></i> +355 69 809 0010
+                </a>
+                <span class="text-botanical-800">|</span>
+                <!-- Language Selector Pill in Top Bar with Flags (SQ & EN) -->
+                <div class="inline-flex items-center bg-botanical-900 border border-botanical-700 rounded-full p-0.5 text-xs">
+                    <button onclick="setLanguage('sq')" id="lang-btn-sq-top" class="px-2.5 py-0.5 rounded-full font-bold transition text-amberGlow-400 bg-botanical-800">🇦🇱 SQ</button>
+                    <button onclick="setLanguage('en')" id="lang-btn-en-top" class="px-2.5 py-0.5 rounded-full font-bold transition text-stone-400 hover:text-white">🇬🇧 EN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200/80 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+<a href="#" class="flex items-center gap-3 group">
+    <div class="w-[4.8rem] h-[4.8rem] flex items-center justify-center overflow-hidden">
+        <img src="green_garden_logo.jpg" alt="Green Garden Tirana Resort" class="w-full h-full object-contain object-center">    
+    </div>
+    <div class="text-[10px] uppercase tracking-widest text-botanical-700 font-semibold leading-tight">
+        <span class="block" data-i18n="subLogo1">Restorant</span>
+        <span class="block" data-i18n="subLogo2">Pishinë</span>
+        <span class="block" data-i18n="subLogo3">Hëngritës i Vogël</span>
+        <span class="block" data-i18n="subLogo4">Ngjarje Private</span>
+    </div>
+</a>
+            <!-- Desktop Links -->
+            <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-stone-700">
+                <a href="#about" class="hover:text-botanical-700 transition" data-i18n="navAbout">Rreth Nesh</a>
+                <a href="#menu" class="hover:text-botanical-700 transition" data-i18n="navMenu">Menuja</a>
+                <a href="#pool" class="hover:text-botanical-700 transition flex items-center gap-1.5">
+                    <span data-i18n="navPool">Pishina & Bar</span>
+                </a>
+                <a href="#events" class="hover:text-botanical-700 transition" data-i18n="navEvents">Ngjarje & Salloni</a>
+                <a href="#family" class="hover:text-botanical-700 transition" data-i18n="navFamily">Për Familjet</a>
+                <a href="#contact" class="hover:text-botanical-700 transition" data-i18n="navContact">Kontakti</a>
+            </nav>
+
+            <!-- CTA Actions -->
+            <div class="hidden sm:flex items-center gap-3">
+                <button onclick="openModal('reservationModal')" class="px-5 py-2.5 bg-botanical-700 hover:bg-botanical-800 text-white font-semibold rounded-full text-sm shadow-md shadow-botanical-900/10 transition duration-300 flex items-center gap-2 border border-botanical-600">
+                    <i data-lucide="calendar" class="w-4 h-4 text-amberGlow-400"></i> <span data-i18n="btnReserve">Rezervo tryezën / ngjarjen</span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button onclick="toggleMobileMenu()" class="lg:hidden text-stone-700 hover:text-botanical-800 p-2" aria-label="Menu">
+                <i data-lucide="menu" id="menuIcon" class="w-7 h-7"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-stone-200 px-6 py-6 space-y-4 shadow-xl">
+            <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-stone-800 hover:text-botanical-700 font-semibold border-b border-stone-100" data-i18n="navAbout">Rreth Nesh</a>
+            <a href="#menu" onclick="toggleMobileMenu()" class="block py-2 text-stone-800 hover:text-botanical-700 font-semibold border-b border-stone-100" data-i18n="navMenu">Menuja</a>
+            <a href="#pool" onclick="toggleMobileMenu()" class="block py-2 text-botanical-700 font-semibold border-b border-stone-100">
+                <span data-i18n="navPool">Pishina e Jashtme & Lounge</span>
+            </a>
+            <a href="#events" onclick="toggleMobileMenu()" class="block py-2 text-stone-800 hover:text-botanical-700 font-semibold border-b border-stone-100" data-i18n="navEvents">Dasma & Salloni Privat</a>
+            <a href="#family" onclick="toggleMobileMenu()" class="block py-2 text-stone-800 hover:text-botanical-700 font-semibold border-b border-stone-100" data-i18n="navFamily">Këndi i Lojërave & Familja</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 text-stone-800 hover:text-botanical-700 font-semibold" data-i18n="navContact">Kontakti & Harta</a>
+            
+            <div class="pt-4 border-t border-stone-200">
+                <button onclick="toggleMobileMenu(); openModal('reservationModal');" class="w-full py-3.5 bg-botanical-700 hover:bg-botanical-800 text-white font-semibold rounded-xl text-center flex items-center justify-center gap-2 shadow-md">
+                    <i data-lucide="calendar" class="w-5 h-5 text-amberGlow-400"></i> <span data-i18n="btnReserveMob">Rezervo tryezën ose ngjarjen</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-20 bg-gradient-to-b from-botanical-50 via-patioLight to-white">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1920&q=80" alt="Green Garden Tirana Resort" class="w-full h-full object-cover object-center opacity-15 scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-patioLight via-patioLight/85 to-botanical-50/70"></div>
+            <div class="absolute inset-0 bg-pattern-light"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
+            
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-botanical-200 text-botanical-900 text-xs sm:text-sm font-semibold mb-8 shadow-sm">
+                <span class="w-2.5 h-2.5 rounded-full bg-botanical-600 animate-pulse"></span>
+                <span data-i18n="heroBadge">Tiranë, Shqipëri • Resort Ekskluziv Gastronomik me Pishinë</span>
+            </div>
+            
+            <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-botanical-950 mb-6 leading-tight">
+                Green Garden <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-botanical-800 via-botanical-600 to-amberGlow-600" data-i18n="heroSubtitle">Qetësi, shije dhe elegancë</span>
+            </h1>
+
+            <p class="max-w-3xl mx-auto text-stone-700 text-lg sm:text-xl font-normal mb-8 leading-relaxed" data-i18n="heroDescription">
+                Një përvojë ekskluzive gastronomike ku tradita shqiptare dhe steakhouse amerikan takojnë elegancën absolute. Mjedis elegant për familje dhe ngjarje të rafinuara me hapësira për festa, kënd lojërash për fëmijë dhe pishinë të jashtme.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button onclick="openModal('reservationModal')" class="w-full sm:w-auto px-8 py-4 bg-botanical-700 hover:bg-botanical-800 text-white font-semibold rounded-full text-base shadow-lg shadow-botanical-900/15 transition duration-300 flex items-center justify-center gap-3 border border-botanical-600 group">
+                    <span data-i18n="heroCta1">Rezervo tryezën ose ngjarjen</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5 text-amberGlow-400 group-hover:translate-x-1 transition"></i>
+                </button>
+                <a href="#events" class="w-full sm:w-auto px-8 py-4 bg-white hover:bg-botanical-50 text-botanical-950 border border-botanical-200 font-semibold rounded-full text-base shadow-sm transition duration-300 flex items-center justify-center gap-2">
+                    <i data-lucide="party-popper" class="w-4 h-4 text-botanical-600"></i> <span data-i18n="heroCta2">Hapësirat për festa dhe dasma</span>
+                </a>
+            </div>
+
+            <!-- Quick Feature Cards Grid -->
+            <div class="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto text-left">
+                <div class="glass-card p-4 rounded-2xl border-l-4 border-l-botanical-600">
+                    <i data-lucide="flame" class="w-6 h-6 text-amberGlow-600 mb-2"></i>
+                    <div class="text-sm font-bold text-botanical-950" data-i18n="feature1Title">US Steakhouse & Traditë</div>
+                    <div class="text-xs text-stone-600" data-i18n="feature1Desc">Mish dry-aged & fuzion shqiptar</div>
+                </div>
+                <div class="glass-card p-4 rounded-2xl border-l-4 border-l-botanical-600">
+                    <i data-lucide="waves" class="w-6 h-6 text-botanical-600 mb-2"></i>
+                    <div class="text-sm font-bold text-botanical-950" data-i18n="feature2Title">Pishina & Pool Bar</div>
+                    <div class="text-xs text-stone-600" data-i18n="feature2Desc">Relaks, shezlongë & koktejle</div>
+                </div>
+                <div class="glass-card p-4 rounded-2xl border-l-4 border-l-botanical-600">
+                    <i data-lucide="crown" class="w-6 h-6 text-amberGlow-600 mb-2"></i>
+                    <div class="text-sm font-bold text-botanical-950" data-i18n="feature3Title">Sallon Privat</div>
+                    <div class="text-xs text-stone-600" data-i18n="feature3Desc">Dasma, festa & ngjarje familjare</div>
+                </div>
+                <div class="glass-card p-4 rounded-2xl border-l-4 border-l-botanical-600">
+                    <i data-lucide="baby" class="w-6 h-6 text-botanical-600 mb-2"></i>
+                    <div class="text-sm font-bold text-botanical-950" data-i18n="feature4Title">Parajsë Familjare</div>
+                    <div class="text-xs text-stone-600" data-i18n="feature4Desc">Kënd lojëras modern & qetësi</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Concept Section -->
+    <section id="about" class="py-24 bg-white relative border-t border-stone-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 text-botanical-700 text-xs uppercase tracking-widest font-bold">
+                        <i data-lucide="leaf" class="w-4 h-4 text-botanical-600"></i> <span data-i18n="aboutBadge">Ekskluzivitet pranë Tiranës</span>
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-botanical-950 leading-tight" data-i18n="aboutTitle">
+                        Oaz qetësie, shije e rafinuar dhe rehati familjare
+                    </h2>
+                    <p class="text-stone-700 leading-relaxed font-normal" data-i18n="aboutDesc1">
+                        <strong>Restorant Green Garden</strong> në kilometrin e 12-të në jug të Tiranës (Bërzhitë) është një vend unik ku mikpritja e sinqertë takon standardet më të larta të ngrënies moderne. Ne ofrojmë një kombinim që nuk ka të dytë në rajon.
+                    </p>
+                    <p class="text-stone-600 leading-relaxed text-sm" data-i18n="aboutDesc2">
+                        Lidhja e një <strong>steakhouse-i të vërtetë amerikan</strong> (mish i vjetruar, ribeye USDA Prime, Tomahawk) me autenticitetin e <strong>kuzhinës tradicionale shqiptare</strong> (qengj i pjekur, fërgesë, perime të freskëta nga fermat lokale) krijon një përvojë gastronomike të nivelit më të lartë. Mjedisi ynë me pishinë të jashtme, bar kopshti dhe kënd lojërave garanton qetësi dhe relaks për të gjithë familjen.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 pt-4 border-t border-stone-200">
+                        <div class="flex items-start gap-3">
+                            <div class="p-3 bg-botanical-50 rounded-xl text-botanical-700 border border-botanical-200">
+                                <i data-lucide="utensils-crossed" class="w-6 h-6 text-amberGlow-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-serif text-2xl font-bold text-botanical-950" data-i18n="stat1Title">2 Fuzione</div>
+                                <div class="text-xs text-stone-600 font-medium" data-i18n="stat1Sub">US Steakhouse & Traditë Shqiptare</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="p-3 bg-botanical-50 rounded-xl text-botanical-700 border border-botanical-200">
+                                <i data-lucide="trees" class="w-6 h-6 text-botanical-700"></i>
+                            </div>
+                            <div>
+                                <div class="font-serif text-2xl font-bold text-botanical-950">5 000 m²</div>
+                                <div class="text-xs text-stone-600 font-medium" data-i18n="stat2Sub">Kopshte, pishinë & sallon privat</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 flex items-center gap-4">
+                        <button onclick="openModal('reservationModal')" class="inline-flex items-center gap-2 text-sm text-botanical-700 hover:text-botanical-900 font-bold group">
+                            <span data-i18n="aboutCta">Planifikoni një vizitë ose festë në Green Garden</span>
+                            <i data-lucide="chevron-right" class="w-4 h-4 group-hover:translate-x-1 transition"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Steak në qymyr Green Garden" class="rounded-2xl shadow-md w-full h-64 object-cover border border-stone-200">
+                            <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80" alt="Pishina e jashtme Green Garden" class="rounded-2xl shadow-md w-full h-48 object-cover border border-stone-200">
+                        </div>
+                        <div class="space-y-4 pt-8">
+                            <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=800&q=80" alt="Salla e dasmave dhe festave" class="rounded-2xl shadow-md w-full h-48 object-cover border border-stone-200">
+                            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Ekspertizë gastronomike shqiptare" class="rounded-2xl shadow-md w-full h-64 object-cover border border-stone-200">
+                        </div>
+                    </div>
+                    
+                    <!-- Decorative Badge -->
+                    <div class="absolute -bottom-6 -left-6 bg-white border border-botanical-200 p-5 rounded-2xl shadow-xl hidden sm:block">
+                        <div class="flex items-center gap-3">
+                            <div class="p-3 bg-amberGlow-100 rounded-xl text-amberGlow-700">
+                                <i data-lucide="award" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm font-bold text-botanical-950" data-i18n="badgeAwardTitle">Standarde ekskluzive</div>
+                                <div class="text-xs text-stone-600" data-i18n="badgeAwardSub">Cilësi premium e mishit & përbërës lokalë</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Outdoor Swimming Pool & Bar Section -->
+    <section id="pool" class="py-24 bg-botanical-50/60 relative overflow-hidden border-t border-botanical-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <div>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-botanical-100 border border-botanical-300 text-botanical-800 text-xs font-bold uppercase tracking-wider mb-3">
+                        <i data-lucide="waves" class="w-3.5 h-3.5 text-botanical-700"></i> <span data-i18n="poolBadge">Parajsë e Jashtme</span>
+                    </span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-botanical-950 mb-4" data-i18n="poolTitle">
+                        Pishinë me bar & ombrellë për relaks të plotë
+                    </h2>
+                    <p class="text-stone-700 leading-relaxed mb-6" data-i18n="poolDesc">
+                        Shijoni ditët me diell të Shqipërisë pranë pishinës sonë të kristaltë. Në dispozicion janë shezlongë të rehatshëm me ombrellë, shërbim i klasit të parë dhe Pool Bar, i cili gjatë gjithë ditës shërben koktejle freskuese, shampanjë të ftohtë dhe ushqime të lehta verore.
+                    </p>
+
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center gap-3 text-stone-700 text-sm">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-botanical-600 flex-shrink-0"></i>
+                            <span data-i18n="poolB1">Rezervim shezlongësh privatë dhe kabana me shërbim</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-stone-700 text-sm">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-botanical-600 flex-shrink-0"></i>
+                            <span data-i18n="poolB2">Koktejle speciale, lëngje të freskëta frutash & ushqime të lehta verore</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-stone-700 text-sm">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-botanical-600 flex-shrink-0"></i>
+                            <span data-i18n="poolB3">Muzikë e këndshme chill-out & ndriçim mbrëmjeje për pishinën</span>
+                        </div>
+                    </div>
+
+                    <button onclick="openModal('reservationModal')" class="px-6 py-3.5 bg-botanical-700 hover:bg-botanical-800 text-white font-semibold rounded-full text-sm shadow-md flex items-center gap-2 border border-botanical-600">
+                        <i data-lucide="sun" class="w-4 h-4 text-amberGlow-400"></i> <span data-i18n="poolBtn">Rezervo shezlong pranë pishinës</span>
+                    </button>
+                </div>
+
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1000&q=80" alt="Pishina me bar në Green Garden Tiranë" class="rounded-3xl shadow-xl w-full h-[420px] object-cover border border-stone-200">
+                    <div class="absolute bottom-6 right-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-stone-200 max-w-xs">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="glass-water" class="w-8 h-8 text-amberGlow-600"></i>
+                            <div>
+                                <div class="text-xs font-bold text-stone-500 uppercase">Pool Bar Menu</div>
+                                <div class="text-sm font-bold text-botanical-950" data-i18n="poolBarSub">Koktejle me emër & Verë Shqiptare</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section: US Steakhouse Meets Traditional Albanian Cuisine -->
+    <section id="menu" class="py-24 bg-white relative border-t border-stone-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-botanical-700 text-xs uppercase tracking-widest font-bold block mb-2" data-i18n="menuTag">Menuja Zyrtare</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-botanical-950 mb-4" data-i18n="menuTitle">Menuja Jonë</h2>
+                <p class="text-stone-600" data-i18n="menuDesc">Ofertë autentike gastronomike nga kuzhina jonë, skara me qymyr dhe furra tradicionale. Të gjitha çmimet janë në lekë (ALL).</p>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-2 mb-12" id="menuTabs">
+                <button onclick="filterMenu('all')" class="menu-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition duration-200 bg-botanical-700 text-white shadow-sm" data-category="all" data-i18n="catAll">
+                    Të gjitha kategoritë
+                </button>
+                <button onclick="filterMenu('starters')" class="menu-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition duration-200 bg-patioLight border border-stone-200 text-stone-700 hover:bg-stone-100" data-category="starters" data-i18n="catStarters">
+                    🫒 Paragjellë & Antipasta
+                </button>
+                <button onclick="filterMenu('mains')" class="menu-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition duration-200 bg-patioLight border border-stone-200 text-stone-700 hover:bg-stone-100" data-category="mains" data-i18n="catMains">
+                    🥩 Skara & Nga Furra
+                </button>
+                <button onclick="filterMenu('pasta_risotto')" class="menu-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition duration-200 bg-patioLight border border-stone-200 text-stone-700 hover:bg-stone-100" data-category="pasta_risotto" data-i18n="catPasta">
+                    🍝 Pasta, Rizoto & Supa
+                </button>
+                <button onclick="filterMenu('pizza')" class="menu-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition duration-200 bg-patioLight border border-stone-200 text-stone-700 hover:bg-stone-100" data-category="pizza" data-i18n="catPizza">
+                    🍕 Piceri
+                </button>
+                <button onclick="filterMenu('desserts_kids')" class="menu-tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition duration-200 bg-patioLight border border-stone-200 text-stone-700 hover:bg-stone-100" data-category="desserts_kids" data-i18n="catDesserts">
+                    🍰 Ëmbëlsira & Menu për Fëmijë
+                </button>
+            </div>
+
+            <!-- Menu Grid Container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="menuGrid">
+                
+                <!-- STARTERS & ANTIPASTA -->
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Homemade Bread with Assorted Dips</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">200 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc1">Bukë shtëpie e ngrohtë e shërbyer me një përzgjedhje salcash dhe dipesh tradicionale.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">GREEN GARDEN Antipasta</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">1 800 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc2">Përzgjedhje e prosciutto-s së vjetruar dhe djathërave me cilësi të lartë, e shërbyer me fruta të thara dhe të freskëta.</p>
+                    <span class="px-2.5 py-1 text-[10px] uppercase font-bold bg-amberGlow-100 text-amberGlow-800 rounded-md" data-i18n="badgeChefAntipasto">👑 Chef's Special Antipasto</span>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Shrimp Saganaki in Creamy Sauce</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">1 200 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc3">Karkaleca me lëng në salcë kremoze me djathë saganaki.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Mediterranean Octopus Salad</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">950 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc4">Sallatë mesdhetare me oktapod të butë dhe vaj ulliri.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Baked Seafood Casserole</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">950 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc5">Tavë e pjekur me fruta deti nga furra.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Burrata Cream with Pita and Pomodorini</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">850 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc6">Krem burrata me bukë pita, domate qershi, qumësht dhe vezë ferme.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Goat Cheese in Pastry with Pistachio</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">450 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc7">Djathë dhie nga punishtja e Konispolit në petë me fëstëk.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Zucchini Fritters with Mint Sauce</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">500 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc8">Qoftë kungulli me salcë nenexhiku, djathë deleje dhe vaj ulliri.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Roasted Veal Bone Marrow with Herb Crust</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">700 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc9">Palcë kocke viçi e pjekur me korre erëzash.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Tzatziki with Arugula and Pomodorini</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">450 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc10">Tzatziki tradicional i shërbyer me rukolë të freskët dhe domate qershi.</p>
+                </div>
+
+                <!-- MAIN COURSES - GRILL & OVEN -->
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Tomahawk Steak</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">4 500 ALL / Kg</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc11">Steak Tomahawk ekskluziv i vjetruar i përgatitur në qymyr druri.</p>
+                    <span class="px-2.5 py-1 text-[10px] uppercase font-bold bg-amberGlow-100 text-amberGlow-800 rounded-md" data-i18n="badgeUsGrill">🔥 Premium US Grill</span>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Dry-Aged T-Bone Steak</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">4 500 ALL / Kg</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc12">Steak T-Bone i vjetruar me shije me lëng dhe aromë skare.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Picanha</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">9 500 ALL / Kg</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc13">Prerje me cilësi të lartë e mishit të viçit Picanha i pjekur në skarë deri në përsosmëri.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Texas Brisket (7h Slow-Cooked)</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">5 500 ALL / Kg</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc14">Përshtatje viçi e pjekur ngadalë për 7 orë në furrë për lëngshmëri maksimale.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Oven-baked Lamb with Pilaf & Mushrooms</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">3 900 ALL / Kg</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc15">Qengj i pjekur ngadalë me pilaf tradicional dhe kërpudha.</p>
+                    <span class="px-2.5 py-1 text-[10px] uppercase font-bold bg-botanical-100 text-botanical-800 rounded-md" data-i18n="badgeAlbanianTradition">🇦🇱 Traditë Shqiptare nga Furra</span>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Charcoal Chicken with Truffle & Roshnica</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">3 100 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc16">Pulë e tymosur e pjekur në furrë dhe e përfunduar në qymyr me roshnica dhe gomolë (truffle).</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Oven-baked Koran (Traditional Albanian Fish)</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">5 700 ALL / Kg</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc17">Peshk i rrallë Koran i pjekur sipas recetës tradicionale me qepë dhe domate.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Grilled Beef Fillet with Vegetables</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">2 100 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc18">Fileto viçi në skarë me perime stine të pjekura.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Grilled Tiger Shrimp</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">2 300 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc19">Karkaleca tigër të pjekur në skarë me qymyr druri.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Cheeseburger with Onion Rings & Fries</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">1 300 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc20">Cheeseburger me lëng me unaza qepe dhe patate të skuqura.</p>
+                </div>
+
+                <!-- PASTA, RISOTTO & SALADS -->
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Milanese Risotto with Fresh Burrata</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">1 050 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc21">Rizoto me shafran sipas stilit milanez me burrata të freskët.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Spaghetti with Seafood</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">980 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc22">Spageti me fruta deti të freskëta dhe salcë të lehtë.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Truffle Risotto</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">900 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc23">Rizoto e shkëlqyer me salcë gomole të zezë (truffle).</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Paccheri with Shrimp and Zucchini</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">900 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc24">Pasta paccheri me karkaleca dhe kungull të ri.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Green Garden Salad</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">1 000 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc25">Sallata jonë e freskët me përbërës të zgjedhur dhe dresing.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Salmon Salad with Mango & Avocado</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">1 000 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc26">Sallatë me copëza salmoni, mango të pjekur, avokado dhe fruta të thara.</p>
+                </div>
+
+                <!-- PIZZERIA (NO PORK PRODUCTS) -->
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pizza">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">White Pizza "Bianca"</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">950 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc27">Picë pa bazë domateje me fior di latte, rukolë, djathë grana dhe prosciutto viçi.</p>
+                    <span class="px-2.5 py-1 text-[10px] uppercase font-bold bg-amberGlow-100 text-amberGlow-800 rounded-md" data-i18n="badgeNoPork">🍕 100% Beef & Poultry (No Pork)</span>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pizza">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Stromboli Pizza</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">1 000 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc28">Picë fior di latte, prosciutto gjeldeti, kërpudha dhe rikotë e lehtë.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pizza">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Spicy Salami or Mild Salami Pizza</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">750 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc29">Salcë domateje, mocarela, sallam viçi pikant dhe salcë kosi.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pizza">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Capricciosa Pizza</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">800 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc30">Prosciutto, sallam, kërpudha, artiçokë dhe ullinj të zinj.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pizza">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Margherita Pizza</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">650 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc31">Mocarela e freskët, salcë domateje, djathë grana dhe borzilok.</p>
+                </div>
+
+                <!-- DESSERTS & KIDS MENU -->
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Chocolate Soufflé with Ice Cream</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">700 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc32">Sufle e nxehtë me chocolatë me qendër të lëngshme dhe një top akullore vanilje.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Cheesecake / Tiramisu / Mille-feuille</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">700 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc33">Ëmbëlsira tradicionale shtëpie të shërbyera të freskëta nga punishtja jonë.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950">Kids Menu: Chicken Strips / Mini Burger with Fries</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">600 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc34">Nugeta pule ose mini burger me patate të skuqura për fëmijë.</p>
+                    <span class="px-2.5 py-1 text-[10px] uppercase font-bold bg-botanical-100 text-botanical-800 rounded-md" data-i18n="badgeKids">👶 Për mysafirët tanë më të vegjël</span>
+                </div>
+
+            </div>
+
+            <div class="mt-12 text-center">
+                <button onclick="openModal('reservationModal')" class="inline-flex items-center gap-2 px-8 py-3.5 bg-botanical-700 hover:bg-botanical-800 text-white font-semibold rounded-full text-sm shadow-md transition">
+                    <i data-lucide="utensils" class="w-4 h-4 text-amberGlow-400"></i> <span data-i18n="btnMenuReserve">Rezervo tryezën për një përvojë me shije</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events & Private Venue Section -->
+    <section id="events" class="py-24 bg-patioLight relative border-t border-stone-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-botanical-700 text-xs uppercase tracking-widest font-bold block mb-2" data-i18n="eventsTag">Sallon i Veçantë për Ngjarje</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-botanical-950 mb-4" data-i18n="eventsTitle">Mjedisi për Momentet Tuaja Më të Rëndësishme</h2>
+                <p class="text-stone-600" data-i18n="eventsDesc">Drekë dasme, festa familjare, ditëlindje dhe mbrëmje gala korporative në privatësinë ekskluzive të sallës sonë me tarracë private.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="glass-card rounded-3xl overflow-hidden hover:border-botanical-400 transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=800&q=80" alt="Dasma në Green Garden" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="text-xs text-botanical-700 font-bold uppercase tracking-wider mb-1" data-i18n="event1Category">Dasma & Mbrëmje Gala</div>
+                        <h3 class="font-serif text-xl font-bold text-botanical-950 mb-2" data-i18n="event1Title">Restorant Dasmash</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-4" data-i18n="event1Desc">
+                            Dasëm përrallore në gjelbërim me mundësi ceremonie pranë pishinës dhe banket pasues në sallën me ajër të kondicionuar.
+                        </p>
+                        <span class="inline-block text-xs text-botanical-800 font-bold bg-botanical-100 px-3 py-1 rounded-full border border-botanical-200" data-i18n="event1Cap">
+                            Kapaciteti deri në 200 të ftuar
+                        </span>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-3xl overflow-hidden hover:border-botanical-400 transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80" alt="Festa ditëlindjesh Green Garden" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="text-xs text-botanical-700 font-bold uppercase tracking-wider mb-1" data-i18n="event2Category">Takime Familjare</div>
+                        <h3 class="font-serif text-xl font-bold text-botanical-950 mb-2" data-i18n="event2Title">Festa Ditëlindjesh</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-4" data-i18n="event2Desc">
+                            Festa të nezharritshme ditëlindjesh dhe jubilesh me menu të personalizuar, muzikë live dhe hapësirë për kërcim.
+                        </p>
+                        <span class="inline-block text-xs text-botanical-800 font-bold bg-botanical-100 px-3 py-1 rounded-full border border-botanical-200" data-i18n="event2Cap">
+                            Katering & dekorim individual
+                        </span>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-3xl overflow-hidden hover:border-botanical-400 transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" alt="Ngjarje korporative" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="text-xs text-botanical-700 font-bold uppercase tracking-wider mb-1" data-i18n="event3Category">Korporative & VIP</div>
+                        <h3 class="font-serif text-xl font-bold text-botanical-950 mb-2" data-i18n="event3Title">Bankete Korporative</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-4" data-i18n="event3Desc">
+                            Hapësira përfaqësuese për partnerët tuaj të biznesit, kompanitë dhe shoqëritë VIP.
+                        </p>
+                        <span class="inline-block text-xs text-botanical-800 font-bold bg-botanical-100 px-3 py-1 rounded-full border border-botanical-200" data-i18n="event3Cap">
+                            Ozvoçim, mikrofonë & projeksion
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Event Inquiry Banner -->
+            <div class="mt-12 bg-gradient-to-r from-botanical-900 to-botanical-800 text-white rounded-3xl p-8 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <h3 class="font-serif text-2xl sm:text-3xl font-bold mb-2" data-i18n="eventBannerTitle">Po planifikoni një festë familjare apo dasmë në Shqipëri?</h3>
+                    <p class="text-botanical-200 text-sm max-w-xl" data-i18n="eventBannerDesc">Menaxheri ynë i ngjarjeve do t'ju përgatitë një ofertë të personalizuar përfshirë menunë, dekorin me lule dhe programin.</p>
+                </div>
+                <button onclick="openModal('reservationModal')" class="px-8 py-3.5 bg-amberGlow-500 hover:bg-amberGlow-600 text-white font-bold rounded-full text-sm shadow-md transition flex-shrink-0 border border-amberGlow-400" data-i18n="eventBannerBtn">
+                    Kërko datën e ngjarjes
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family & Playground Section -->
+    <section id="family" class="py-24 bg-white relative border-t border-stone-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <div class="relative order-2 lg:order-1">
+                    <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=1000&q=80" alt="Këndi i lojërave Green Garden Tiranë" class="rounded-3xl shadow-xl w-full h-[400px] object-cover border border-stone-200">
+                </div>
+
+                <div class="order-1 lg:order-2">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-botanical-100 border border-botanical-300 text-botanical-800 text-xs font-bold uppercase tracking-wider mb-3">
+                        <i data-lucide="smile" class="w-3.5 h-3.5 text-botanical-700"></i> <span data-i18n="familyBadge">Rehati Familjare</span>
+                    </span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-botanical-950 mb-4" data-i18n="familyTitle">
+                        Mjedis i sigurt për fëmijët tuaj
+                    </h2>
+                    <p class="text-stone-700 leading-relaxed mb-6" data-i18n="familyDesc">
+                        Në Green Garden mendojmë për komfortin e plotë familjar. Ndërsa ju shijoni një steak me cilësi të lartë apo një gotë verë pranë pishinës, fëmijët tuaj mund të argëtohen të sigurt në këndin tonë modern të lojërave të rrethuar në pamje të drejtpërdrejtë.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 text-stone-700 text-sm">
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="shield-check" class="w-5 h-5 text-botanical-600"></i>
+                            <span data-i18n="familyB1">Kënd lojërash i rrethuar dhe i sigurt</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="utensils" class="w-5 h-5 text-botanical-600"></i>
+                            <span data-i18n="familyB2">Menu speciale për fëmijë</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="baby" class="w-5 h-5 text-botanical-600"></i>
+                            <span data-i18n="familyB3">Karrige për fëmijë</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="heart" class="w-5 h-5 text-botanical-600"></i>
+                            <span data-i18n="familyB4">Mikpritje e ngrohtë shqiptare</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section id="contact" class="py-24 bg-patioLight relative border-t border-stone-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <div>
+                    <span class="text-botanical-700 text-xs uppercase tracking-widest font-bold block mb-2" data-i18n="contactTag">Ku Na Gjeni</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-botanical-950 mb-6">Green Garden Resort Tiranë</h2>
+
+                    <div class="space-y-6 text-stone-700">
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-botanical-100 border border-botanical-200 flex items-center justify-center text-botanical-700 flex-shrink-0 mt-1">
+                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-botanical-950 text-base" data-i18n="contactAddrLabel">Adresa</h4>
+                                <p class="text-stone-600 text-sm" data-i18n="contactAddr">KM 12, Rruga Bërzhitë<br>1037 Tiranë, Shqipëri (15 min nga qendra e Tiranës)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-botanical-100 border border-botanical-200 flex items-center justify-center text-botanical-700 flex-shrink-0 mt-1">
+                                <i data-lucide="clock" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-botanical-950 text-base" data-i18n="contactHoursLabel">Oraret e Hapjes</h4>
+                                <p class="text-stone-600 text-sm" data-i18n="contactHours">E Hënë – E Diel: 09:30 – 23:00<br>Pishina hapur nga 09:00 deri 20:00</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-botanical-100 border border-botanical-200 flex items-center justify-center text-botanical-700 flex-shrink-0 mt-1">
+                                <i data-lucide="phone" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-botanical-950 text-base" data-i18n="contactPhoneLabel">Telefoni & Kontakti</h4>
+                                <p class="text-stone-600 text-sm">
+                                    <a href="tel:+355698090010" class="hover:text-botanical-700 transition font-semibold">+355 69 809 0010</a><br>
+                                    <span>rezervace@greengarden.al</span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-8 pt-8 border-t border-stone-200 flex flex-wrap items-center gap-4">
+                        <button onclick="openModal('reservationModal')" class="px-6 py-3 bg-botanical-700 hover:bg-botanical-800 text-white font-semibold rounded-full text-sm shadow-md flex items-center gap-2">
+                            <i data-lucide="calendar" class="w-4 h-4 text-amberGlow-400"></i> <span data-i18n="btnReserve">Rezervo tryezën / ngjarjen</span>
+                        </button>
+                        <a href="https://maps.google.com/?cid=16846139320453225077" target="_blank" rel="noopener" class="px-6 py-3 bg-white hover:bg-stone-100 text-stone-800 rounded-full text-sm font-semibold border border-stone-300 flex items-center gap-2">
+                            <i data-lucide="navigation" class="w-4 h-4 text-botanical-700"></i> <span data-i18n="contactMapBtn">Lundro në Google Maps</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed Container -->
+                <div class="relative rounded-3xl overflow-hidden border border-stone-200 bg-stone-100 min-h-[360px] flex flex-col shadow-lg">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47980.14810235316!2d19.8200!3d41.2500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13503aae14d4f215%3A0xe9c9d2811060dad5!2sB%C3%ABrzhit%C3%AB%2C%20Albania!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" class="flex-1 w-full min-h-[360px]"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Modal -->
+    <div id="reservationModal" class="fixed inset-0 z-50 bg-stone-900/60 hidden items-center justify-center p-4 backdrop-blur-sm">
+        <div class="bg-white border border-stone-200 rounded-3xl p-6 sm:p-8 max-w-lg w-full relative shadow-2xl">
+            <button onclick="closeModal('reservationModal')" class="absolute top-5 right-5 text-stone-400 hover:text-stone-800 p-2" aria-label="Mbyll">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+
+            <div class="mb-6">
+                <span class="text-botanical-700 text-xs uppercase tracking-widest font-bold block mb-1" data-i18n="modalBadge">Formulari i Rezervimit</span>
+                <h3 class="font-serif text-2xl font-bold text-botanical-950" data-i18n="modalTitle">Rezervim tryeze, pishine ose ngjarje</h3>
+                <p class="text-stone-600 text-xs mt-1">Green Garden Restaurant & Resort Tirana</p>
+            </div>
+
+            <form id="reservationForm" onsubmit="handleReservationSubmit(event)" class="space-y-4">
+                
+                <!-- Zone Selector -->
+                <div>
+                    <label class="block text-xs font-bold text-stone-700 mb-1.5" data-i18n="modalZoneLabel">Vendi / Zona në resort *</label>
+                    <select required class="w-full bg-patioLight border border-stone-300 rounded-xl px-3 py-2.5 text-xs sm:text-sm text-stone-800 focus:outline-none focus:border-botanical-600">
+                        <option value="restaurant" data-i18n="modalOpt1">🥩 Restoranti Kryesor & Steakhouse</option>
+                        <option value="pool" data-i18n="modalOpt2">🏊 Shezlongë pranë Pishinës & Pool Bar</option>
+                        <option value="hall" data-i18n="modalOpt3">👑 Salloni i Veçantë (Dasma & Festa Familjare)</option>
+                        <option value="patio" data-i18n="modalOpt4">🌿 Tarraca Verore e Kopshtit me kënd lojërash</option>
+                    </select>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-stone-700 mb-1" data-i18n="modalName">Emri dhe Mbiemri *</label>
+                        <input type="text" required placeholder="Emri Juaj" class="w-full bg-patioLight border border-stone-300 rounded-xl px-3 py-2.5 text-sm text-stone-800 focus:outline-none focus:border-botanical-600">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-stone-700 mb-1" data-i18n="modalPhone">Telefoni *</label>
+                        <input type="tel" required placeholder="+355 69 123 4567" class="w-full bg-patioLight border border-stone-300 rounded-xl px-3 py-2.5 text-sm text-stone-800 focus:outline-none focus:border-botanical-600">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-stone-700 mb-1">Email *</label>
+                    <input type="email" required placeholder="email@shembull.al" class="w-full bg-patioLight border border-stone-300 rounded-xl px-3 py-2.5 text-sm text-stone-800 focus:outline-none focus:border-botanical-600">
+                </div>
+
+                <div class="grid grid-cols-3 gap-3">
+                    <div>
+                        <label class="block text-xs font-bold text-stone-700 mb-1" data-i18n="modalDate">Data *</label>
+                        <input type="date" required class="w-full bg-patioLight border border-stone-300 rounded-xl px-2 py-2.5 text-xs text-stone-800 focus:outline-none focus:border-botanical-600">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-stone-700 mb-1" data-i18n="modalTime">Ora *</label>
+                        <select required class="w-full bg-patioLight border border-stone-300 rounded-xl px-2 py-2.5 text-xs text-stone-800 focus:outline-none focus:border-botanical-600">
+                            <option value="12:00">12:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="19:00" selected>19:00</option>
+                            <option value="20:30">20:30</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-stone-700 mb-1" data-i18n="modalGuests">Numri i personave *</label>
+                        <select required class="w-full bg-patioLight border border-stone-300 rounded-xl px-2 py-2.5 text-xs text-stone-800 focus:outline-none focus:border-botanical-600">
+                            <option value="2" data-i18n="guestOpt1">2 persona</option>
+                            <option value="4" data-i18n="guestOpt2">4 persona</option>
+                            <option value="6" data-i18n="guestOpt3">6 persona</option>
+                            <option value="10+" data-i18n="guestOpt4">Festë / Grup (10+)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-stone-700 mb-1" data-i18n="modalNote">Shënime / Lloji i ngjarjes / Kërkesa</label>
+                    <textarea rows="2" placeholder="Detaje mbi festën ose kërkesat tuaja..." class="w-full bg-patioLight border border-stone-300 rounded-xl px-3 py-2 text-sm text-stone-800 focus:outline-none focus:border-botanical-600"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3.5 bg-botanical-700 hover:bg-botanical-800 text-white font-semibold rounded-xl text-sm shadow-md transition duration-200 mt-2" data-i18n="modalSubmit">
+                    Dërgo Rezervimin
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toastNotification" class="fixed bottom-20 md:bottom-8 right-6 z-50 bg-botanical-950 border border-botanical-700 text-white px-5 py-4 rounded-2xl shadow-2xl hidden items-center gap-3">
+        <i data-lucide="check-circle-2" class="w-6 h-6 text-amberGlow-400"></i>
+        <div>
+            <div class="text-sm font-bold" data-i18n="toastTitle">Rezervimi në Green Garden u pranua!</div>
+            <div class="text-xs text-botanical-200" data-i18n="toastDesc">Ekipi ynë do t'ju kontaktojë së shpejti për konfirmim.</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-botanical-950 text-stone-300 py-12 border-t border-botanical-900 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 flex items-center justify-center overflow-hidden">
+                    <img src="green_garden_logo.jpg" alt="Green Garden Tirana Resort" class="w-full h-full object-contain object-center">
+                </div>
+                <div>
+                    <span class="font-serif font-bold text-white text-base">GREEN GARDEN RESTAURANT & RESORT</span>
+                    <span class="block text-[10px] text-amberGlow-400 font-semibold" data-i18n="footerSub">Tiranë, Shqipëri • US Steakhouse & Albanian Heritage</span>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-6 text-xs text-stone-300 font-medium">
+                <a href="#about" class="hover:text-white transition" data-i18n="navAbout">Rreth Nesh</a>
+                <a href="#menu" class="hover:text-white transition" data-i18n="navMenu">Menuja Steakhouse</a>
+                <a href="#pool" class="hover:text-white transition" data-i18n="navPool">Pishina & Bar</a>
+                <a href="#events" class="hover:text-white transition" data-i18n="navEvents">Salloni i Dasmave</a>
+                <a href="#contact" class="hover:text-white transition" data-i18n="navContact">Kontakti</a>
+            </div>
+
+            <div class="text-xs text-stone-400 text-center md:text-right">
+                © <span id="currentYear"></span> Green Garden Albania. <span data-i18n="footerRights">Të gjitha të drejtat e rezervuara.</span> <br>
+                KM 12 Bërzhitë, Tiranë.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Quick Bar -->
+    <div class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 border-t border-stone-200 p-2.5 md:hidden flex items-center justify-around gap-2 backdrop-blur-lg shadow-lg">
+        <a href="tel:+355698090010" class="flex-1 py-2.5 bg-patioLight border border-stone-300 text-stone-800 text-xs font-bold rounded-xl flex items-center justify-center gap-1.5">
+            <i data-lucide="phone" class="w-4 h-4 text-botanical-700"></i> <span data-i18n="btnCall">Thirr</span>
+        </a>
+        <button onclick="openModal('reservationModal')" class="flex-1 py-2.5 bg-botanical-700 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 shadow-md">
+            <i data-lucide="calendar" class="w-4 h-4 text-amberGlow-400"></i> <span data-i18n="btnReserveShort">Rezervim</span>
+        </button>
+    </div>
+
+    <script>
+        const translations = {
+            sq: {
+                topBarPool: "Pishina & Pool Bar hapur çdo ditë 09:00 - 20:00",
+                topBarBadge: "Ngjarje Ekskluzive & Saloni i Dasmave",
+                subLogo1: "Restorant",
+                subLogo2: "Pishinë",
+                subLogo3: "Hëngritës i Vogël",
+                subLogo4: "Ngjarje Private",
+                navAbout: "Rreth Nesh",
+                navMenu: "Menuja",
+                navPool: "Pishina & Bar",
+                navEvents: "Ngjarje & Salloni",
+                navFamily: "Për Familjet",
+                navContact: "Kontakti",
+                btnReserve: "Rezervo tryezën / ngjarjen",
+                btnReserveMob: "Rezervo tryezën ose ngjarjen",
+                btnCall: "Thirr",
+                btnReserveShort: "Rezervim",
+                heroBadge: "Tiranë, Shqipëri • Resort Ekskluziv Gastronomik me Pishinë",
+                heroSubtitle: "Qetësi, shije dhe elegancë",
+                heroDescription: "Një përvojë ekskluzive gastronomike ku tradita shqiptare dhe steakhouse amerikan takojnë elegancën absolute. Mjedis elegant për familje dhe ngjarje të rafinuara me hapësira për festa, kënd lojëra për fëmijë dhe pishinë të jashtme.",
+                heroCta1: "Rezervo tryezën ose ngjarjen",
+                heroCta2: "Hapësirat për festa dhe dasma",
+                feature1Title: "US Steakhouse & Traditë",
+                feature1Desc: "Mish dry-aged & fuzion shqiptar",
+                feature2Title: "Pishina & Pool Bar",
+                feature2Desc: "Relaks, shezlongë & koktejle",
+                feature3Title: "Sallon Privat",
+                feature3Desc: "Dasma, festa & ngjarje familjare",
+                feature4Title: "Parajsë Familjare",
+                feature4Desc: "Kënd lojëras modern & qetësi",
+                aboutBadge: "Ekskluzivitet pranë Tiranës",
+                aboutTitle: "Oaz qetësie, shije e rafinuar dhe rehati familjare",
+                aboutDesc1: "<strong>Restorant Green Garden</strong> në kilometrin e 12-të në jug të Tiranës (Bërzhitë) është një vend unik ku mikpritja e sinqertë takon standardet më të larta të ngrënies moderne. Ne ofrojmë një kombinim që nuk ka të dytë në rajon.",
+                aboutDesc2: "Lidhja e një <strong>steakhouse-i të vërtetë amerikan</strong> (mish i vjetruar, ribeye USDA Prime, Tomahawk) me autenticitetin e <strong>kuzhinës tradicionale shqiptare</strong> (qengj i pjekur, fërgesë, perime të freskëta nga fermat lokale) krijon një përvojë gastronomike të nivelit më të lartë. Mjedisi ynë me pishinë të jashtme, bar kopshti dhe kënd lojërave garanton qetësi dhe relaks për të gjithë familjen.",
+                stat1Title: "2 Fuzione",
+                stat1Sub: "US Steakhouse & Traditë Shqiptare",
+                stat2Sub: "Kopshte, pishinë & sallon privat",
+                aboutCta: "Planifikoni një vizitë ose festë në Green Garden",
+                badgeAwardTitle: "Standarde ekskluzive",
+                badgeAwardSub: "Cilësi premium e mishit & përbërës lokalë",
+                poolBadge: "Parajsë e Jashtme",
+                poolTitle: "Pishinë me bar & ombrellë për relaks të plotë",
+                poolDesc: "Shijoni ditët me diell të Shqipërisë pranë pishinës sonë të kristaltë. Në dispozicion janë shezlongë të rehatshëm me ombrellë, shërbim i klasit të parë dhe Pool Bar, i cili gjatë gjithë ditës shërben koktejle freskuese, shampanjë të ftohtë dhe ushqime të lehta verore.",
+                poolB1: "Rezervim shezlongësh privatë dhe kabana me shërbim",
+                poolB2: "Koktejle speciale, lëngje të freskëta frutash & ushqime të lehta verore",
+                poolB3: "Muzikë e këndshme chill-out & ndriçim mbrëmjeje për pishinën",
+                poolBtn: "Rezervo shezlong pranë pishinës",
+                poolBarSub: "Koktejle me emër & Verë Shqiptare",
+                menuTag: "Menuja Zyrtare",
+                menuTitle: "Menuja Jonë",
+                menuDesc: "Ofertë autentike gastronomike nga kuzhina jonë, skara me qymyr dhe furra tradicionale. Të gjitha çmimet janë në lekë (ALL).",
+                catAll: "Të gjitha kategoritë",
+                catStarters: "🫒 Paragjellë & Antipasta",
+                catMains: "🥩 Skara & Nga Furra",
+                catPasta: "🍝 Pasta, Rizoto & Supa",
+                catPizza: "🍕 Piceri",
+                catDesserts: "🍰 Ëmbëlsira & Menu për Fëmijë",
+                itemDesc1: "Bukë shtëpie e ngrohtë e shërbyer me një përzgjedhje salcash dhe dipesh tradicionale.",
+                itemDesc2: "Përzgjedhje e prosciutto-s së vjetruar dhe djathërave me cilësi të lartë, e shërbyer me fruta të thara dhe të freskëta.",
+                badgeChefAntipasto: "👑 Chef's Special Antipasto",
+                itemDesc3: "Karkaleca me lëng në salcë kremoze me djathë saganaki.",
+                itemDesc4: "Sallatë mesdhetare me oktapod të butë dhe vaj ulliri.",
+                itemDesc5: "Tavë e pjekur me fruta deti nga furra.",
+                itemDesc6: "Krem burrata me bukë pita, domate qershi, qumësht dhe vezë ferme.",
+                itemDesc7: "Djathë dhie nga punishtja e Konispolit në petë me fëstëk.",
+                itemDesc8: "Qoftë kungulli me salcë nenexhiku, djathë deleje dhe vaj ulliri.",
+                itemDesc9: "Palcë kocke viçi e pjekur me korre erëzash.",
+                itemDesc10: "Tzatziki tradicional i shërbyer me rukolë të freskët dhe domate qershi.",
+                itemDesc11: "Steak Tomahawk ekskluziv i vjetruar i përgatitur në qymyr druri.",
+                badgeUsGrill: "🔥 Premium US Grill",
+                itemDesc12: "Steak T-Bone i vjetruar me shije me lëng dhe aromë skare.",
+                itemDesc13: "Prerje me cilësi të lartë e mishit të viçit Picanha i pjekur në skarë deri në përsosmëri.",
+                itemDesc14: "Përshtatje viçi e pjekur ngadalë për 7 orë në furrë për lëngshmëri maksimale.",
+                itemDesc15: "Qengj i pjekur ngadalë me pilaf tradicional dhe kërpudha.",
+                badgeAlbanianTradition: "🇦🇱 Traditë Shqiptare nga Furra",
+                itemDesc16: "Pulë e tymosur e pjekur në furrë dhe e përfunduar në qymyr me roshnica dhe gomolë (truffle).",
+                itemDesc17: "Peshk i rrallë Koran i pjekur sipas recetës tradicionale me qepë dhe domate.",
+                itemDesc18: "Fileto viçi në skarë me perime stine të pjekura.",
+                itemDesc19: "Karkaleca tigër të pjekur në skarë me qymyr druri.",
+                itemDesc20: "Cheeseburger me lëng me unaza qepe dhe patate të skuqura.",
+                itemDesc21: "Rizoto me shafran sipas stilit milanez me burrata të freskët.",
+                itemDesc22: "Spageti me fruta deti të freskëta dhe salcë të lehtë.",
+                itemDesc23: "Rizoto e shkëlqyer me salcë gomole të zezë (truffle).",
+                itemDesc24: "Pasta paccheri me karkaleca dhe kungull të ri.",
+                itemDesc25: "Sallata jonë e freskët me përbërës të zgjedhur dhe dresing.",
+                itemDesc26: "Sallatë me copëza salmoni, mango të pjekur, avokado dhe fruta të thara.",
+                itemDesc27: "Picë pa bazë domateje me fior di latte, rukolë, djathë grana dhe prosciutto viçi.",
+                badgeNoPork: "🍕 100% Beef & Poultry (No Pork)",
+                itemDesc28: "Picë fior di latte, prosciutto gjeldeti, kërpudha dhe rikotë e lehtë.",
+                itemDesc29: "Salcë domateje, mocarela, sallam viçi pikant dhe salcë kosi.",
+                itemDesc30: "Prosciutto, sallam, kërpudha, artiçokë dhe ullinj të zinj.",
+                itemDesc31: "Mocarela e freskët, salcë domateje, djathë grana dhe borzilok.",
+                itemDesc32: "Sufle e nxehtë me chocolatë me qendër të lëngshme dhe një top akullore vanilje.",
+                itemDesc33: "Ëmbëlsira tradicionale shtëpie të shërbyera të freskëta nga punishtja jonë.",
+                itemDesc34: "Nugeta pule ose mini burger me patate të skuqura për fëmijë.",
+                badgeKids: "👶 Për mysafirët tanë më të vegjël",
+                btnMenuReserve: "Rezervo tryezën për një përvojë me shije",
+                eventsTag: "Sallon i Veçantë për Ngjarje",
+                eventsTitle: "Mjedisi për Momentet Tuaja Më të Rëndësishme",
+                eventsDesc: "Drekë dasme, festa familjare, ditëlindje dhe mbrëmje gala korporative në privatësinë ekskluzive të sallës sonë me tarracë private.",
+                event1Category: "Dasma & Mbrëmje Gala",
+                event1Title: "Restorant Dasmash",
+                event1Desc: "Dasëm përrallore në gjelbërim me mundësi ceremonie pranë pishinës dhe banket pasues në sallën me ajër të kondicionuar.",
+                event1Cap: "Kapaciteti deri në 200 të ftuar",
+                event2Category: "Takime Familjare",
+                event2Title: "Festa Ditëlindjesh",
+                event2Desc: "Festa të nezharritshme ditëlindjesh dhe jubilesh me menu të personalizuar, muzikë live dhe hapësirë për kërcim.",
+                event2Cap: "Katering & dekorim individual",
+                event3Category: "Korporative & VIP",
+                event3Title: "Bankete Korporative",
+                event3Desc: "Hapësira përfaqësuese për partnerët tuaj të biznesit, kompanitë dhe shoqëritë VIP.",
+                event3Cap: "Ozvoçim, mikrofonë & projeksion",
+                eventBannerTitle: "Po planifikoni një festë familjare apo dasmë në Shqipëri?",
+                eventBannerDesc: "Menaxheri ynë i ngjarjeve do t'ju përgatitë një ofertë të personalizuar përfshirë menunë, dekorin me lule dhe programin.",
+                eventBannerBtn: "Kërko datën e ngjarjes",
+                familyBadge: "Rehati Familjare",
+                familyTitle: "Mjedis i sigurt për fëmijët tuaj",
+                familyDesc: "Në Green Garden mendojmë për komfortin e plotë familjar. Ndërsa ju shijoni një steak me cilësi të lartë apo një gotë verë pranë pishinës, fëmijët tuaj mund të argëtohen të sigurt në këndin tonë modern të lojërave të rrethuar në pamje të drejtpërdrejtë.",
+                familyB1: "Kënd lojërash i rrethuar dhe i sigurt",
+                familyB2: "Menu speciale për fëmijë",
+                familyB3: "Karrige për fëmijë",
+                familyB4: "Mikpritje e ngrohtë shqiptare",
+                contactTag: "Ku Na Gjeni",
+                contactAddrLabel: "Adresa",
+                contactAddr: "KM 12, Rruga Bërzhitë<br>1037 Tiranë, Shqipëri (15 min nga qendra e Tiranës)",
+                contactHoursLabel: "Oraret e Hapjes",
+                contactHours: "E Hënë – E Diel: 09:30 – 23:00<br>Pishina hapur nga 09:00 deri 20:00",
+                contactPhoneLabel: "Telefoni & Kontakti",
+                contactMapBtn: "Lundro në Google Maps",
+                modalBadge: "Formulari i Rezervimit",
+                modalTitle: "Rezervim tryeze, pishine ose ngjarje",
+                modalZoneLabel: "Vendi / Zona në resort *",
+                modalOpt1: "🥩 Restoranti Kryesor & Steakhouse",
+                modalOpt2: "🏊 Shezlongë pranë Pishinës & Pool Bar",
+                modalOpt3: "👑 Salloni i Veçantë (Dasma & Festa Familjare)",
+                modalOpt4: "🌿 Tarraca Verore e Kopshtit me kënd lojërash",
+                modalName: "Emri dhe Mbiemri *",
+                modalPhone: "Telefoni *",
+                modalDate: "Data *",
+                modalTime: "Ora *",
+                modalGuests: "Numri i personave *",
+                guestOpt1: "2 persona",
+                guestOpt2: "4 persona",
+                guestOpt3: "6 persona",
+                guestOpt4: "Festë / Grup (10+)",
+                modalNote: "Shënime / Lloji i ngjarjes / Kërkesa",
+                modalSubmit: "Dërgo Rezervimin",
+                toastTitle: "Rezervimi në Green Garden u pranua!",
+                toastDesc: "Ekipi ynë do t'ju kontaktojë së shpejti për konfirmim.",
+                footerSub: "Tiranë, Shqipëri • US Steakhouse & Albanian Heritage",
+                footerRights: "Të gjitha të drejtat e rezervuara."
+            },
+            en: {
+                topBarPool: "Pool & Pool Bar open daily 09:00 - 20:00",
+                topBarBadge: "Exclusive Events & Wedding Lounge",
+                subLogo1: "Restaurant",
+                subLogo2: "Pool",
+                subLogo3: "Playground",
+                subLogo4: "Private Events",
+                navAbout: "About Us",
+                navMenu: "Menu",
+                navPool: "Pool & Bar",
+                navEvents: "Events & Hall",
+                navFamily: "For Families",
+                navContact: "Contact",
+                btnReserve: "Book Table / Event",
+                btnReserveMob: "Book Table or Event",
+                btnCall: "Call Us",
+                btnReserveShort: "Book Table",
+                heroBadge: "Tirana, Albania • Exclusive Culinary Resort with Pool",
+                heroSubtitle: "Tranquility, Taste & Elegance",
+                heroDescription: "An exclusive culinary experience where Albanian tradition and American steakhouse meet in absolute elegance. An exquisite venue for families and refined celebrations with dedicated event hall, playground, and outdoor pool.",
+                heroCta1: "Book Table or Private Event",
+                heroCta2: "Venues for Weddings & Celebrations",
+                feature1Title: "US Steakhouse & Heritage",
+                feature1Desc: "Dry-aged steak & Albanian fusion",
+                feature2Title: "Pool & Cocktail Bar",
+                feature2Desc: "Relaxation, sunbeds & signature drinks",
+                feature3Title: "Private Event Hall",
+                feature3Desc: "Weddings, parties & corporate events",
+                feature4Title: "Family Haven",
+                feature4Desc: "Modern playground & serene garden",
+                aboutBadge: "Exclusivity Near Tirana",
+                aboutTitle: "An Oasis of Tranquility, Refined Taste & Family Comfort",
+                aboutDesc1: "<strong>Green Garden Restaurant</strong>, located at kilometer 12 south of Tirana (Bërzhitë), is a unique destination where genuine hospitality meets the highest standards of modern dining. We offer a culinary fusion unmatched in the region.",
+                aboutDesc2: "Combining an authentic <strong>American steakhouse</strong> (dry-aged steaks, USDA Prime ribeyes, Tomahawk) with traditional <strong>Albanian cuisine</strong> (slow-roasted lamb, Fërgesë, fresh local produce) creates a world-class dining experience. Our lush grounds with an outdoor pool, garden bar, and playground guarantee relaxation for the whole family.",
+                stat1Title: "2 Fusions",
+                stat1Sub: "US Steakhouse & Albanian Heritage",
+                stat2Sub: "Gardens, pool & private event lounge",
+                aboutCta: "Plan a Visit or Private Celebration at Green Garden",
+                badgeAwardTitle: "Exclusive standards",
+                badgeAwardSub: "Premium meat quality & local ingredients",
+                poolBadge: "Outdoor Paradise",
+                poolTitle: "Swimming Pool with Bar & Sunbeds for Pure Relaxation",
+                poolDesc: "Enjoy sunny Albanian days by our crystal-clear outdoor swimming pool. Relax on comfortable sunbeds with umbrellas, full service, and a Pool Bar serving refreshing cocktails, chilled champagne, and light summer bites all day long.",
+                poolB1: "Private sunbeds and poolside cabana reservations with full service",
+                poolB2: "Craft cocktails, fresh juices & gourmet summer finger food",
+                poolB3: "Atmospheric chill-out music & illuminated evening pool views",
+                poolBtn: "Book a Sunbed by the Pool",
+                poolBarSub: "Signature Cocktails & Fine Albanian Wine",
+                menuTag: "Official Dining Menu",
+                menuTitle: "Our Menu",
+                menuDesc: "Authentic culinary selections from our kitchen, charcoal grill, and traditional wood-fired oven. All prices are in Albanian Lek (ALL).",
+                catAll: "All Categories",
+                catStarters: "🫒 Starters & Antipasti",
+                catMains: "🥩 Grill & Wood Oven",
+                catPasta: "🍝 Pasta, Risotto & Soups",
+                catPizza: "🍕 Pizzeria",
+                catDesserts: "🍰 Desserts & Kids Menu",
+                itemDesc1: "Warm homemade bread served with an assortment of traditional spreads and dips.",
+                itemDesc2: "Selection of cured prosciutto and fine aged cheeses served with dried and fresh fruits.",
+                badgeChefAntipasto: "👑 Chef's Special Antipasto",
+                itemDesc3: "Juicy shrimp in a creamy sauce with saganaki cheese.",
+                itemDesc4: "Mediterranean salad with tender octopus and olive oil.",
+                itemDesc5: "Oven-baked seafood casserole.",
+                itemDesc6: "Creamy burrata with pita bread, cherry tomatoes, milk and farm eggs.",
+                itemDesc7: "Goat cheese from Konispol dairy in pastry with pistachios.",
+                itemDesc8: "Zucchini fritters with mint sauce, sheep cheese and olive oil.",
+                itemDesc9: "Roasted veal bone marrow with herb crust.",
+                itemDesc10: "Traditional tzatziki served with fresh arugula and cherry tomatoes.",
+                itemDesc11: "Exclusive dry-aged Tomahawk steak grilled over wood charcoal.",
+                badgeUsGrill: "🔥 Premium US Grill",
+                itemDesc12: "Aged T-Bone steak full of juicy flavor and grill aroma.",
+                itemDesc13: "Premium cut of Picanha beef grilled to perfection.",
+                itemDesc14: "Veal brisket slow-cooked for 7 hours in the oven for maximum juice.",
+                itemDesc15: "Slow-roasted milk lamb served with traditional pilaf and mushrooms.",
+                badgeAlbanianTradition: "🇦🇱 Wood-Oven Albanian Heritage",
+                itemDesc16: "Smoked chicken baked in wood oven and finished on charcoal with roshnica and truffle.",
+                itemDesc17: "Rare Koran fish baked according to traditional recipe with onions and tomatoes.",
+                itemDesc18: "Grilled beef fillet served with grilled seasonal vegetables.",
+                itemDesc19: "Grilled tiger shrimp over wood charcoal.",
+                itemDesc20: "Juicy premium cheeseburger with onion rings and french fries.",
+                itemDesc21: "Milanese saffron risotto topped with fresh burrata.",
+                itemDesc22: "Spaghetti with fresh seafood and light sauce.",
+                itemDesc23: "Exquisite risotto with black truffle sauce.",
+                itemDesc24: "Paccheri pasta with shrimp and young zucchini.",
+                itemDesc25: "Our fresh signature salad with selected ingredients and dressing.",
+                itemDesc26: "Salad with salmon pieces, ripe mango, avocado and dried fruits.",
+                itemDesc27: "White pizza with fior di latte, arugula, grana cheese and beef prosciutto.",
+                badgeNoPork: "🍕 100% Beef & Poultry (No Pork)",
+                itemDesc28: "Fior di latte pizza with turkey prosciutto, mushrooms and light ricotta.",
+                itemDesc29: "Tomato sauce, mozzarella, spicy beef salami and yogurt sauce.",
+                itemDesc30: "Beef prosciutto, salami, mushrooms, artichokes and black olives.",
+                itemDesc31: "Fresh mozzarella, tomato sauce, grana cheese and basil.",
+                itemDesc32: "Hot chocolate soufflé with molten center and a scoop of vanilla ice cream.",
+                itemDesc33: "Traditional homemade desserts served fresh from our bakery.",
+                itemDesc34: "Crispy chicken tenders or mini burger with fries for kids.",
+                badgeKids: "👶 For our youngest guests",
+                btnMenuReserve: "Reserve a Table for a Culinary Experience",
+                eventsTag: "Private Event Hall",
+                eventsTitle: "The Perfect Setting for Your Most Special Moments",
+                eventsDesc: "Wedding receptions, family celebrations, birthday parties, and corporate galas in total privacy within our dedicated banqueting hall and terrace.",
+                event1Category: "Weddings & Galas",
+                event1Title: "Wedding Receptions",
+                event1Desc: "A fairytale wedding amidst lush greenery with poolside ceremonies followed by a grand banquet in our air-conditioned event hall.",
+                event1Cap: "Capacity up to 200 guests",
+                event2Category: "Family Gatherings",
+                event2Title: "Birthday Celebrations",
+                event2Desc: "Unforgettable birthday and anniversary parties with custom menus, live music, and generous dance floor space.",
+                event2Cap: "Tailored catering & event decoration",
+                event3Category: "Corporate & VIP",
+                event3Title: "Corporate Banquets",
+                event3Desc: "Prestigious venue for business partners, corporate gala dinners, and private VIP gatherings.",
+                event3Cap: "Sound system, microphones & video projection",
+                eventBannerTitle: "Planning a family celebration or wedding in Albania?",
+                eventBannerDesc: "Our dedicated event coordinator will tailor a complete proposal for you, including menu design, floral arrangements, and entertainment.",
+                eventBannerBtn: "Inquire Event Availability",
+                familyBadge: "Family Comfort",
+                familyTitle: "A Safe & Engaging Environment for Your Children",
+                familyDesc: "At Green Garden, we prioritize total family comfort. While you enjoy a premium steak or a glass of fine wine by the pool, your children can play safely in our modern enclosed playground right within view.",
+                familyB1: "Securely fenced children's playground",
+                familyB2: "Dedicated kids' menu with fresh ingredients",
+                familyB3: "High chairs and family amenities available",
+                familyB4: "Warm and welcoming Albanian hospitality",
+                contactTag: "Location & Directions",
+                contactAddrLabel: "Address",
+                contactAddr: "KM 12, Rruga Bërzhitë<br>1037 Tiranë, Albania (15 mins from Tirana center)",
+                contactHoursLabel: "Opening Hours",
+                contactHours: "Monday – Sunday: 09:30 – 23:00<br>Pool open daily from 09:00 to 20:00",
+                contactPhoneLabel: "Phone & Contact",
+                contactMapBtn: "Open in Google Maps",
+                modalBadge: "Reservation Form",
+                modalTitle: "Table, Pool or Private Event Reservation",
+                modalZoneLabel: "Resort Area / Location *",
+                modalOpt1: "🥩 Main Restaurant & Steakhouse",
+                modalOpt2: "🏊 Poolside Sunbeds & Pool Bar",
+                modalOpt3: "👑 Private Event Hall (Weddings & Parties)",
+                modalOpt4: "🌿 Summer Garden Terrace & Playground Area",
+                modalName: "Full Name *",
+                modalPhone: "Phone Number *",
+                modalDate: "Date *",
+                modalTime: "Time *",
+                modalGuests: "Number of Guests *",
+                guestOpt1: "2 Guests",
+                guestOpt2: "4 Guests",
+                guestOpt3: "6 Guests",
+                guestOpt4: "Party / Group (10+ Guests)",
+                modalNote: "Notes / Event Type / Special Requests",
+                modalSubmit: "Submit Reservation Request",
+                toastTitle: "Reservation Request Received!",
+                toastDesc: "Our team will contact you shortly to confirm your booking.",
+                footerSub: "Tirana, Albania • US Steakhouse & Albanian Heritage",
+                footerRights: "All rights reserved."
+            }
+        };
+
+        let currentLang = localStorage.getItem('preferred_lang') || 'sq';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('preferred_lang', lang);
+            document.documentElement.lang = lang;
+
+            // Update text elements with data-i18n attribute
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    if (translations[lang][key].includes('<')) {
+                        el.innerHTML = translations[lang][key];
+                    } else {
+                        el.textContent = translations[lang][key];
+                    }
+                }
+            });
+
+            // Update active styling of language buttons in top announcement bar
+            const isSq = lang === 'sq';
+            const sqTop = document.getElementById('lang-btn-sq-top');
+            const enTop = document.getElementById('lang-btn-en-top');
+            if (sqTop && enTop) {
+                sqTop.className = isSq ? 'px-2.5 py-0.5 rounded-full font-bold transition text-amberGlow-400 bg-botanical-800 shadow-sm' : 'px-2.5 py-0.5 rounded-full font-bold transition text-stone-400 hover:text-white';
+                enTop.className = !isSq ? 'px-2.5 py-0.5 rounded-full font-bold transition text-amberGlow-400 bg-botanical-800 shadow-sm' : 'px-2.5 py-0.5 rounded-full font-bold transition text-stone-400 hover:text-white';
+            }
+        }
+
+        // Apply preferred language on load
+        window.addEventListener('DOMContentLoaded', () => {
+            setLanguage(currentLang);
+        });
+
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Dynamic Year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile Menu Drawer Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Modal Functions
+        function openModal(id) {
+            const modal = document.getElementById(id);
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal(id) {
+            const modal = document.getElementById(id);
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // Category Menu Filter
+        function filterMenu(category) {
+            const items = document.querySelectorAll('.menu-item');
+            const buttons = document.querySelectorAll('.menu-tab-btn');
+
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-category') === category) {
+                    btn.classList.remove('bg-patioLight', 'text-stone-700', 'border-stone-200');
+                    btn.classList.add('bg-botanical-700', 'text-white', 'shadow-sm');
+                } else {
+                    btn.classList.remove('bg-botanical-700', 'text-white', 'shadow-sm');
+                    btn.classList.add('bg-patioLight', 'text-stone-700', 'border-stone-200');
+                }
+            });
+
+            items.forEach(item => {
+                const itemCategory = item.getAttribute('data-category');
+                if (category === 'all' || itemCategory === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Reservation Form Submission
+        function handleReservationSubmit(e) {
+            e.preventDefault();
+            closeModal('reservationModal');
+            
+            const toast = document.getElementById('toastNotification');
+            toast.classList.remove('hidden');
+            toast.classList.add('flex');
+
+            setTimeout(() => {
+                toast.classList.add('hidden');
+                toast.classList.remove('flex');
+            }, 5000);
+
+            document.getElementById('reservationForm').reset();
+        }
+    </script>
+</body>
+</html>
