@@ -205,6 +205,15 @@
                 </a>
             </div>
 
+            <!-- Video Intro Section -->
+            <div class="flex justify-center mx-auto mt-12">
+                <video controls autoplay muted loop playsinline webkit-playsinline
+                       class="w-[90%] md:w-[55%] h-auto [clip-path:inset(8%_0_0_0)]">
+                    <source src="green_garden_intro.mp4" type="video/mp4">
+                    Váš prohlížeč nepodporuje přehrávání videa.
+                </video>
+            </div>
+
             <!-- Quick Feature Cards Grid -->
             <div class="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto text-left">
                 <div class="glass-card p-4 rounded-2xl border-l-4 border-l-botanical-600">
@@ -398,85 +407,137 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="menuGrid">
                 
                 <!-- STARTERS & ANTIPASTA -->
+                <div class="menu-item md:col-span-2" data-category="starters">
+                    <h3 class="text-2xl font-serif font-bold text-botanical-950 border-b-2 border-botanical-200 pb-2">Starter</h3>
+                </div>
+
                 <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-serif font-bold text-botanical-950">Homemade Bread with Assorted Dips</h3>
+                        <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle1">Bukë shpie me salca të ndryshme</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">200 ALL</span>
                     </div>
-                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc1">Bukë shtëpie e ngrohtë e shërbyer me një përzgjedhje salcash dhe dipesh tradicionale.</p>
+                </div>
+
+                <div class="menu-item md:col-span-2 pt-2" data-category="starters">
+                    <h3 class="text-2xl font-serif font-bold text-botanical-950 border-b-2 border-botanical-200 pb-2">Antipasta</h3>
+                </div>
+
+                <div class="menu-item md:col-span-2" data-category="starters">
+                    <h4 class="text-sm font-bold uppercase tracking-widest text-amberGlow-700" data-i18n="subheadDeti">DETI</h4>
                 </div>
 
                 <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-serif font-bold text-botanical-950">GREEN GARDEN Antipasta</h3>
-                        <span class="text-botanical-700 font-bold font-serif text-lg">1 800 ALL</span>
+                        <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle2">Sallat octapodi mesdhetare</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">950 ALL</span>
                     </div>
-                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc2">Përzgjedhje e prosciutto-s së vjetruar dhe djathërave me cilësi të lartë, e shërbyer me fruta të thara dhe të freskëta.</p>
-                    <span class="px-2.5 py-1 text-[10px] uppercase font-bold bg-amberGlow-100 text-amberGlow-800 rounded-md" data-i18n="badgeChefAntipasto">👑 Chef's Special Antipasto</span>
                 </div>
 
                 <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-serif font-bold text-botanical-950">Shrimp Saganaki in Creamy Sauce</h3>
+                        <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle3">Caserulo me prodhime deti ne furrë</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">950 ALL</span>
+                    </div>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle4">Kallamar friture</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">800 ALL</span>
+                    </div>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle5">Saganag me karkalec në salcë kremoze</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">1 200 ALL</span>
                     </div>
-                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc3">Karkaleca me lëng në salcë kremoze me djathë saganaki.</p>
+                </div>
+
+                <div class="menu-item md:col-span-2 pt-2" data-category="starters">
+                    <h4 class="text-sm font-bold uppercase tracking-widest text-amberGlow-700" data-i18n="subheadToka">TOKA</h4>
                 </div>
 
                 <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-serif font-bold text-botanical-950">Mediterranean Octopus Salad</h3>
-                        <span class="text-botanical-700 font-bold font-serif text-lg">950 ALL</span>
-                    </div>
-                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc4">Sallatë mesdhetare me oktapod të butë dhe vaj ulliri.</p>
-                </div>
-
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-serif font-bold text-botanical-950">Baked Seafood Casserole</h3>
-                        <span class="text-botanical-700 font-bold font-serif text-lg">950 ALL</span>
-                    </div>
-                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc5">Tavë e pjekur me fruta deti nga furra.</p>
-                </div>
-
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-serif font-bold text-botanical-950">Burrata Cream with Pita and Pomodorini</h3>
-                        <span class="text-botanical-700 font-bold font-serif text-lg">850 ALL</span>
-                    </div>
-                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc6">Krem burrata me bukë pita, domate qershi, qumësht dhe vezë ferme.</p>
-                </div>
-
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-serif font-bold text-botanical-950">Goat Cheese in Pastry with Pistachio</h3>
+                        <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle6">Pite e lezetuar</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">450 ALL</span>
                     </div>
-                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc7">Djathë dhie nga punishtja e Konispolit në petë me fëstëk.</p>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc1">pite me perime, djath dele, vaj ulliri extra vergjine</p>
                 </div>
 
                 <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-serif font-bold text-botanical-950">Zucchini Fritters with Mint Sauce</h3>
+                        <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle7">Djath dhie në këmishë me pistak</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">450 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc2">nga baxhot e konispolit</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle8">Qofte kungulli me salcë menexhiku</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">500 ALL</span>
                     </div>
-                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc8">Qoftë kungulli me salcë nenexhiku, djathë deleje dhe vaj ulliri.</p>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc3">kungull i njomë, vezë, djathë dele, koper</p>
                 </div>
 
                 <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-serif font-bold text-botanical-950">Roasted Veal Bone Marrow with Herb Crust</h3>
-                        <span class="text-botanical-700 font-bold font-serif text-lg">700 ALL</span>
+                        <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle9">Kerpurdhe spinaq saute me krem qumeshti</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">650 ALL</span>
                     </div>
-                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc9">Palcë kocke viçi e pjekur me korre erëzash.</p>
                 </div>
 
                 <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-serif font-bold text-botanical-950">Tzatziki with Arugula and Pomodorini</h3>
+                        <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle10">Ajkë qumështi burata me pite pomodorini</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">850 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc5">petë me qumësht dhe vezë fshati</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle11">Bukë misri me ajkë kosi dhe gjalp</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">450 ALL</span>
                     </div>
-                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc10">Tzatziki tradicional i shërbyer me rukolë të freskët dhe domate qershi.</p>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle12">Caseruole me të brendshme vici</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">700 ALL</span>
+                    </div>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle13">Xaxiq i shoqëruar me rucola dhe pomodorini</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">450 ALL</span>
+                    </div>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle14">Byrek me qumësht për 3 persona</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">750 ALL</span>
+                    </div>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle15">Palcë vici furre me kroste erëzash</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">700 ALL</span>
+                    </div>
+                </div>
+
+                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle16">Antipasta GREEN GARDEN</h3>
+                        <span class="text-botanical-700 font-bold font-serif text-lg">1 800 ALL</span>
+                    </div>
+                    <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc4">mishra dhe djathra të stazhionuar, të shoqëruara me fruta të thata dhe të freskëta</p>
                 </div>
 
                 <!-- MAIN COURSES - GRILL & OVEN -->
@@ -1052,17 +1113,29 @@
                 catPasta: "🍝 Pasta, Rizoto & Supa",
                 catPizza: "🍕 Piceri",
                 catDesserts: "🍰 Ëmbëlsira & Menu për Fëmijë",
-                itemDesc1: "Bukë shtëpie e ngrohtë e shërbyer me një përzgjedhje salcash dhe dipesh tradicionale.",
-                itemDesc2: "Përzgjedhje e prosciutto-s së vjetruar dhe djathërave me cilësi të lartë, e shërbyer me fruta të thara dhe të freskëta.",
-                badgeChefAntipasto: "👑 Chef's Special Antipasto",
-                itemDesc3: "Karkaleca me lëng në salcë kremoze me djathë saganaki.",
-                itemDesc4: "Sallatë mesdhetare me oktapod të butë dhe vaj ulliri.",
-                itemDesc5: "Tavë e pjekur me fruta deti nga furra.",
-                itemDesc6: "Krem burrata me bukë pita, domate qershi, qumësht dhe vezë ferme.",
-                itemDesc7: "Djathë dhie nga punishtja e Konispolit në petë me fëstëk.",
-                itemDesc8: "Qoftë kungulli me salcë nenexhiku, djathë deleje dhe vaj ulliri.",
-                itemDesc9: "Palcë kocke viçi e pjekur me korre erëzash.",
-                itemDesc10: "Tzatziki tradicional i shërbyer me rukolë të freskët dhe domate qershi.",
+                itemTitle1: "Bukë shpie me salca të ndryshme",
+                subheadDeti: "DETI",
+                itemTitle2: "Sallat octapodi mesdhetare",
+                itemTitle3: "Caserulo me prodhime deti ne furrë",
+                itemTitle4: "Kallamar friture",
+                itemTitle5: "Saganag me karkalec në salcë kremoze",
+                subheadToka: "TOKA",
+                itemTitle6: "Pite e lezetuar",
+                itemDesc1: "pite me perime, djath dele, vaj ulliri extra vergjine",
+                itemTitle7: "Djath dhie në këmishë me pistak",
+                itemDesc2: "nga baxhot e konispolit",
+                itemTitle8: "Qofte kungulli me salcë menexhiku",
+                itemDesc3: "kungull i njomë, vezë, djathë dele, koper",
+                itemTitle9: "Kerpurdhe spinaq saute me krem qumeshti",
+                itemTitle10: "Ajkë qumështi burata me pite pomodorini",
+                itemDesc5: "petë me qumësht dhe vezë fshati",
+                itemTitle11: "Bukë misri me ajkë kosi dhe gjalp",
+                itemTitle12: "Caseruole me të brendshme vici",
+                itemTitle13: "Xaxiq i shoqëruar me rucola dhe pomodorini",
+                itemTitle14: "Byrek me qumësht për 3 persona",
+                itemTitle15: "Palcë vici furre me kroste erëzash",
+                itemTitle16: "Antipasta GREEN GARDEN",
+                itemDesc4: "mishra dhe djathra të stazhionuar, të shoqëruara me fruta të thata dhe të freskëta",
                 itemDesc11: "Steak Tomahawk ekskluziv i vjetruar i përgatitur në qymyr druri.",
                 badgeUsGrill: "🔥 Premium US Grill",
                 itemDesc12: "Steak T-Bone i vjetruar me shije me lëng dhe aromë skare.",
@@ -1204,17 +1277,29 @@
                 catPasta: "🍝 Pasta, Risotto & Soups",
                 catPizza: "🍕 Pizzeria",
                 catDesserts: "🍰 Desserts & Kids Menu",
-                itemDesc1: "Warm homemade bread served with an assortment of traditional spreads and dips.",
-                itemDesc2: "Selection of cured prosciutto and fine aged cheeses served with dried and fresh fruits.",
-                badgeChefAntipasto: "👑 Chef's Special Antipasto",
-                itemDesc3: "Juicy shrimp in a creamy sauce with saganaki cheese.",
-                itemDesc4: "Mediterranean salad with tender octopus and olive oil.",
-                itemDesc5: "Oven-baked seafood casserole.",
-                itemDesc6: "Creamy burrata with pita bread, cherry tomatoes, milk and farm eggs.",
-                itemDesc7: "Goat cheese from Konispol dairy in pastry with pistachios.",
-                itemDesc8: "Zucchini fritters with mint sauce, sheep cheese and olive oil.",
-                itemDesc9: "Roasted veal bone marrow with herb crust.",
-                itemDesc10: "Traditional tzatziki served with fresh arugula and cherry tomatoes.",
+                itemTitle1: "Homemade bread with assorted dips",
+                subheadDeti: "SEA",
+                itemTitle2: "Mediterranean octopus salad",
+                itemTitle3: "Baked seafood casserole",
+                itemTitle4: "Fried calamari",
+                itemTitle5: "Shrimp saganaki in creamy sauce",
+                subheadToka: "LAND",
+                itemTitle6: "Delicate pie",
+                itemDesc1: "pie with vegetables, sheep cheese, extra virgin olive oil",
+                itemTitle7: "Goat cheese in pastry with pistachio",
+                itemDesc2: "from Konispol dairies",
+                itemTitle8: "Zucchini fritters with mint sauce",
+                itemDesc3: "young zucchini, eggs, sheep cheese, dill",
+                itemTitle9: "Mushroom and spinach sauté with milk cream",
+                itemTitle10: "Burrata cream with pita and pomodorini",
+                itemDesc5: "pie with milk and farm eggs",
+                itemTitle11: "Cornbread with yogurt cream and butter",
+                itemTitle12: "Casserole with veal offal",
+                itemTitle13: "Tzatziki served with arugula and pomodorini",
+                itemTitle14: "Milk pie for 3 persons",
+                itemTitle15: "Roasted veal bone marrow with herb crust",
+                itemTitle16: "GREEN GARDEN antipasta",
+                itemDesc4: "aged meats and cheeses served with dried and fresh fruits",
                 itemDesc11: "Exclusive dry-aged Tomahawk steak grilled over wood charcoal.",
                 badgeUsGrill: "🔥 Premium US Grill",
                 itemDesc12: "Aged T-Bone steak full of juicy flavor and grill aroma.",
