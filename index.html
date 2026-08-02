@@ -3,7 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Garden Restaurant & Resort | Tiranë, Shqipëri</title>
+    <title>Green Garden Resort Tirana | Steakhouse, Pishinë & Ngjarje</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Green Garden — resort ekskluziv gastronomik në KM 12, Bërzhitë (Tiranë) me steakhouse amerikan, kuzhinë tradicionale shqiptare, pishinë të jashtme dhe sallon për dasma e ngjarje private. Rezervo tavolinën ose ngjarjen tënde sot!">
+    <meta name="keywords" content="restorant Tiranë, steakhouse Shqipëri, resort Bërzhitë, pishinë Tiranë, restaurant Tirana Albania, sallon dasmash Tiranë, ngjarje private Tiranë, Green Garden Tirana, kuzhinë shqiptare, US steakhouse Tirana, wedding venue Tirana, pool restaurant Albania">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Albanian">
+    <meta name="author" content="Green Garden Restaurant & Resort">
+    <!-- TODO: replace with the real live domain once published -->
+    <link rel="canonical" href="https://www.greengarden.al/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="restaurant">
+    <meta property="og:site_name" content="Green Garden Restaurant & Resort">
+    <meta property="og:title" content="Green Garden Resort Tirana | Steakhouse, Pishinë & Ngjarje">
+    <meta property="og:description" content="Resort ekskluziv gastronomik në Tiranë me steakhouse amerikan, traditë shqiptare, pishinë të jashtme dhe sallon për dasma e ngjarje private.">
+    <meta property="og:url" content="https://www.greengarden.al/">
+    <!-- TODO: replace with an absolute URL to a real photo (min. 1200x630px) once hosted -->
+    <meta property="og:image" content="https://www.greengarden.al/green_garden_logo.jpg">
+    <meta property="og:locale" content="sq_AL">
+    <meta property="og:locale:alternate" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Green Garden Resort Tirana | Steakhouse, Pishinë & Ngjarje">
+    <meta name="twitter:description" content="Resort ekskluziv gastronomik në Tiranë me steakhouse amerikan, traditë shqiptare, pishinë të jashtme dhe sallon për dasma e ngjarje private.">
+    <meta name="twitter:image" content="https://www.greengarden.al/green_garden_logo.jpg">
+
+    <!-- Structured Data (schema.org Restaurant) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Green Garden Restaurant & Resort",
+      "image": "https://www.greengarden.al/green_garden_logo.jpg",
+      "url": "https://www.greengarden.al/",
+      "telephone": "+355698090010",
+      "email": "restaurant@greengarden.al",
+      "servesCuisine": ["Albanian", "American Steakhouse", "Mediterranean", "Pizza"],
+      "priceRange": "$$-$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "KM 12, Rruga Bërzhitë",
+        "addressLocality": "Tiranë",
+        "postalCode": "1037",
+        "addressCountry": "AL"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "09:30",
+          "closes": "23:00"
+        }
+      ],
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Air Conditioned", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Outdoor Swimming Pool", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Family Friendly", "value": true }
+      ]
+    }
+    </script>
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
@@ -172,7 +236,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-20 bg-gradient-to-b from-botanical-50 via-patioLight to-white">
+    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-10 pb-20 bg-gradient-to-b from-botanical-50 via-patioLight to-white">
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1920&q=80" alt="Green Garden Tirana Resort" class="w-full h-full object-cover object-center opacity-15 scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-patioLight via-patioLight/85 to-botanical-50/70"></div>
@@ -181,10 +245,10 @@
 
         <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
             
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-botanical-200 text-botanical-900 text-xs sm:text-sm font-semibold mb-8 shadow-sm">
-                <span class="w-2.5 h-2.5 rounded-full bg-botanical-600 animate-pulse"></span>
+            <div class="inline-flex items-center gap-2 text-botanical-700 text-xs sm:text-sm uppercase tracking-widest font-bold mb-8">
                 <span data-i18n="heroBadge">Tiranë, Shqipëri • Resort Ekskluziv Gastronomik me Pishinë</span>
             </div>
+
             
             <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-botanical-950 mb-6 leading-tight">
                 Green Garden <br>
@@ -348,6 +412,10 @@
                             <i data-lucide="check-circle-2" class="w-5 h-5 text-botanical-600 flex-shrink-0"></i>
                             <span data-i18n="poolB3">Muzikë e këndshme chill-out & ndriçim mbrëmjeje për pishinën</span>
                         </div>
+                        <div class="flex items-center gap-3 text-stone-700 text-sm">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-botanical-600 flex-shrink-0"></i>
+                            <span data-i18n="poolB4">Për klientët tanë të rregullt të restorantit, një kartë VIP për hyrje falas në pishinë</span>
+                        </div>
                     </div>
 
                     <button onclick="openModal('reservationModal')" class="px-6 py-3.5 bg-botanical-700 hover:bg-botanical-800 text-white font-semibold rounded-full text-sm shadow-md flex items-center gap-2 border border-botanical-600">
@@ -378,7 +446,7 @@
             <div class="text-center max-w-3xl mx-auto mb-10">
                 <span class="text-botanical-700 text-xs uppercase tracking-widest font-bold block mb-2" data-i18n="menuTag">Menuja Zyrtare</span>
                 <h2 class="font-serif text-3xl sm:text-5xl font-bold text-botanical-950 mb-4" data-i18n="menuTitle">Menuja Jonë</h2>
-                <p class="text-stone-600" data-i18n="menuDesc">Ofertë autentike gastronomike nga kuzhina jonë, skara me qymyr dhe furra tradicionale. Të gjitha çmimet janë në lekë (ALL).</p>
+                <p class="text-stone-600" data-i18n="menuDesc">Ofertë autentike gastronomike nga kuzhina jonë, skara me qymyr dhe furra tradicionale.<br>Të gjitha çmimet janë në lekë (ALL).</p>
             </div>
 
             <!-- Category Filter Tabs -->
@@ -1814,7 +1882,7 @@
                                 <h4 class="font-bold text-botanical-950 text-base" data-i18n="contactPhoneLabel">Telefoni & Kontakti</h4>
                                 <p class="text-stone-600 text-sm">
                                     <a href="tel:+355698090010" class="hover:text-botanical-700 transition font-semibold">+355 69 809 0010</a><br>
-                                    <span>rezervace@greengarden.al</span>
+                                    <span>restaurant@greengarden.al</span>
                                 </p>
                             </div>
                         </div>
@@ -1920,18 +1988,65 @@
         </div>
     </div>
 
-    <!-- Toast Notification -->
-    <div id="toastNotification" class="fixed bottom-20 md:bottom-8 right-6 z-50 bg-botanical-950 border border-botanical-700 text-white px-5 py-4 rounded-2xl shadow-2xl hidden items-center gap-3">
-        <i data-lucide="check-circle-2" class="w-6 h-6 text-amberGlow-400"></i>
-        <div>
-            <div class="text-sm font-bold" data-i18n="toastTitle">Rezervimi në Green Garden u pranua!</div>
-            <div class="text-xs text-botanical-200" data-i18n="toastDesc">Ekipi ynë do t'ju kontaktojë së shpejti për konfirmim.</div>
+    <!-- Booking Unavailable Modal -->
+    <div id="bookingUnavailableModal" class="fixed inset-0 z-50 bg-stone-900/60 hidden items-center justify-center p-4 backdrop-blur-sm">
+        <div class="bg-white border border-stone-200 rounded-3xl p-6 sm:p-8 max-w-md w-full relative shadow-2xl text-center">
+            <button onclick="closeModal('bookingUnavailableModal')" class="absolute top-5 right-5 text-stone-400 hover:text-stone-800 p-2" aria-label="Mbyll">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <div class="w-14 h-14 rounded-full bg-amberGlow-100 text-amberGlow-700 flex items-center justify-center mx-auto mb-4">
+                <i data-lucide="phone-call" class="w-7 h-7"></i>
+            </div>
+            <p class="text-stone-700 text-sm leading-relaxed mb-6" data-i18n="bookingUnavailableText">Rezervimet online nuk janë përkohësisht të disponueshme, ju lutemi bëni një rezervim duke telefonuar në +355 69 809 0010 ose me email në restaurant@greengarden.al</p>
+            <div class="flex flex-col gap-3">
+                <a href="tel:+355698090010" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-botanical-700 hover:bg-botanical-800 text-white font-semibold rounded-full text-sm shadow-md transition w-full">
+                    <i data-lucide="phone" class="w-4 h-4"></i> +355 69 809 0010
+                </a>
+                <a href="mailto:restaurant@greengarden.al" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white hover:bg-botanical-50 text-botanical-700 border border-botanical-200 font-semibold rounded-full text-sm transition w-full">
+                    <i data-lucide="mail" class="w-4 h-4"></i> restaurant@greengarden.al
+                </a>
+            </div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer class="bg-botanical-950 text-stone-300 py-12 border-t border-botanical-900 text-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex flex-wrap items-start justify-center gap-x-10 sm:gap-x-14 gap-y-5 pb-10 mb-10 border-b border-white/10">
+                <div class="flex flex-col items-center gap-2 w-20">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center">
+                        <i data-lucide="wifi" class="w-5 h-5 sm:w-6 sm:h-6 text-white"></i>
+                    </div>
+                    <span class="text-[11px] sm:text-xs font-semibold text-white text-center leading-tight" data-i18n="amenityWifi">Wi-Fi Falas</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 w-20">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center">
+                        <i data-lucide="snowflake" class="w-5 h-5 sm:w-6 sm:h-6 text-white"></i>
+                    </div>
+                    <span class="text-[11px] sm:text-xs font-semibold text-white text-center leading-tight" data-i18n="amenityAC">Ajër i Kondicionuar</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 w-20">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center">
+                        <i data-lucide="users-round" class="w-5 h-5 sm:w-6 sm:h-6 text-white"></i>
+                    </div>
+                    <span class="text-[11px] sm:text-xs font-semibold text-white text-center leading-tight" data-i18n="amenityFamily">Miqësor për Familjen</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 w-20">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center">
+                        <i data-lucide="square-parking" class="w-5 h-5 sm:w-6 sm:h-6 text-white"></i>
+                    </div>
+                    <span class="text-[11px] sm:text-xs font-semibold text-white text-center leading-tight" data-i18n="amenityParking">Parkim Falas</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 w-20">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center">
+                        <i data-lucide="credit-card" class="w-5 h-5 sm:w-6 sm:h-6 text-white"></i>
+                    </div>
+                    <span class="text-[11px] sm:text-xs font-semibold text-white text-center leading-tight" data-i18n="amenityCard">Pagesa me Kartë</span>
+                </div>
+            </div>
+
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="flex items-center gap-3">
                 <div class="w-10 h-10 flex items-center justify-center overflow-hidden">
                     <img src="green_garden_logo.jpg" alt="Green Garden Tirana Resort" class="w-full h-full object-contain object-center">
@@ -1954,6 +2069,7 @@
                 © <span id="currentYear"></span> Green Garden Albania. <span data-i18n="footerRights">Të gjitha të drejtat e rezervuara.</span> <br>
                 KM 12 Bërzhitë, Tiranë.
             </div>
+        </div>
         </div>
     </footer>
 
@@ -1987,6 +2103,11 @@
                 btnCall: "Thirr",
                 btnReserveShort: "Rezervim",
                 heroBadge: "Tiranë, Shqipëri • Resort Ekskluziv Gastronomik me Pishinë",
+                amenityWifi: "Wi-Fi Falas",
+                amenityAC: "Ajër i Kondicionuar",
+                amenityFamily: "Miqësor për Familjen",
+                amenityParking: "Parkim Falas",
+                amenityCard: "Pagesa me Kartë",
                 heroSubtitle: "Qetësi, shije dhe elegancë",
                 heroDescription: "Një përvojë ekskluzive gastronomike ku tradita shqiptare dhe steakhouse amerikan takojnë elegancën absolute. Mjedis elegant për familje dhe ngjarje të rafinuara me hapësira për festa, kënd lojëra për fëmijë dhe pishinë të jashtme.",
                 heroCta1: "Rezervo tryezën ose ngjarjen",
@@ -2015,11 +2136,12 @@
                 poolB1: "Rezervim shezlongësh privatë dhe kabana me shërbim",
                 poolB2: "Koktejle speciale, lëngje të freskëta frutash & ushqime të lehta verore",
                 poolB3: "Muzikë e këndshme chill-out & ndriçim mbrëmjeje për pishinën",
+                poolB4: "Për klientët tanë të rregullt të restorantit, një kartë VIP për hyrje falas në pishinë",
                 poolBtn: "Rezervo shezlong pranë pishinës",
                 poolBarSub: "Koktejle me emër & Verë Shqiptare",
                 menuTag: "Menuja Zyrtare",
                 menuTitle: "Menuja Jonë",
-                menuDesc: "Ofertë autentike gastronomike nga kuzhina jonë, skara me qymyr dhe furra tradicionale. Të gjitha çmimet janë në lekë (ALL).",
+                menuDesc: "Ofertë autentike gastronomike nga kuzhina jonë, skara me qymyr dhe furra tradicionale.<br>Të gjitha çmimet janë në lekë (ALL).",
                 catStarters: "🫒 Paragjellë & Antipasta",
                 catMains: "🥩 Skara & Nga Furra",
                 catPasta: "🍝 Pasta, Rizoto & Supa",
@@ -2208,8 +2330,7 @@
                 guestOpt4: "Festë / Grup (10+)",
                 modalNote: "Shënime / Lloji i ngjarjes / Kërkesa",
                 modalSubmit: "Dërgo Rezervimin",
-                toastTitle: "Rezervimi në Green Garden u pranua!",
-                toastDesc: "Ekipi ynë do t'ju kontaktojë së shpejti për konfirmim.",
+                bookingUnavailableText: "Rezervimet online nuk janë përkohësisht të disponueshme, ju lutemi bëni një rezervim duke telefonuar në +355 69 809 0010 ose me email në restaurant@greengarden.al",
                 footerSub: "Tiranë, Shqipëri • US Steakhouse & Albanian Heritage",
                 footerRights: "Të gjitha të drejtat e rezervuara."
             },
@@ -2231,6 +2352,11 @@
                 btnCall: "Call Us",
                 btnReserveShort: "Book Table",
                 heroBadge: "Tirana, Albania • Exclusive Culinary Resort with Pool",
+                amenityWifi: "Free Wi-Fi",
+                amenityAC: "Air Conditioned",
+                amenityFamily: "Family Friendly",
+                amenityParking: "Free Parking",
+                amenityCard: "Card Payments",
                 heroSubtitle: "Tranquility, Taste & Elegance",
                 heroDescription: "An exclusive culinary experience where Albanian tradition and American steakhouse meet in absolute elegance. An exquisite venue for families and refined celebrations with dedicated event hall, playground, and outdoor pool.",
                 heroCta1: "Book Table or Private Event",
@@ -2259,11 +2385,12 @@
                 poolB1: "Private sunbeds and poolside cabana reservations with full service",
                 poolB2: "Craft cocktails, fresh juices & gourmet summer finger food",
                 poolB3: "Atmospheric chill-out music & illuminated evening pool views",
+                poolB4: "For our regular restaurant guests, a VIP card for free entry to the swimming pool",
                 poolBtn: "Book a Sunbed by the Pool",
                 poolBarSub: "Signature Cocktails & Fine Albanian Wine",
                 menuTag: "Official Dining Menu",
                 menuTitle: "Our Menu",
-                menuDesc: "Authentic culinary selections from our kitchen, charcoal grill, and traditional wood-fired oven. All prices are in Albanian Lek (ALL).",
+                menuDesc: "Authentic culinary selections from our kitchen, charcoal grill, and traditional wood-fired oven.<br>All prices are in Albanian Lek (ALL).",
                 catStarters: "🫒 Starters & Antipasti",
                 catMains: "🥩 Grill & Wood Oven",
                 catPasta: "🍝 Pasta, Risotto & Soups",
@@ -2452,8 +2579,7 @@
                 guestOpt4: "Party / Group (10+ Guests)",
                 modalNote: "Notes / Event Type / Special Requests",
                 modalSubmit: "Submit Reservation Request",
-                toastTitle: "Reservation Request Received!",
-                toastDesc: "Our team will contact you shortly to confirm your booking.",
+                bookingUnavailableText: "Online booking is temporarily unavailable, please make a reservation by calling +355 69 809 0010 or by email at restaurant@greengarden.al",
                 footerSub: "Tirana, Albania • US Steakhouse & Albanian Heritage",
                 footerRights: "All rights reserved."
             }
@@ -2554,16 +2680,7 @@
         function handleReservationSubmit(e) {
             e.preventDefault();
             closeModal('reservationModal');
-            
-            const toast = document.getElementById('toastNotification');
-            toast.classList.remove('hidden');
-            toast.classList.add('flex');
-
-            setTimeout(() => {
-                toast.classList.add('hidden');
-                toast.classList.remove('flex');
-            }, 5000);
-
+            openModal('bookingUnavailableModal');
             document.getElementById('reservationForm').reset();
         }
     </script>
