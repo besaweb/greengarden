@@ -1,0 +1,9 @@
+# Citlivé/konfigurační soubory se skutečnými přístupovými údaji
+config.php
+zaloha/
+mail-backend.zip
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/

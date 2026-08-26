@@ -2,6 +2,17 @@
 <html lang="sq" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1R70RE6RH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-T1R70RE6RH');
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Garden Resort Tirana | Steakhouse, Pishinë & Ngjarje</title>
 
@@ -236,7 +247,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-10 pb-20 bg-gradient-to-b from-botanical-50 via-patioLight to-white">
+    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-10 pb-12 bg-gradient-to-b from-botanical-50 via-patioLight to-white">
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1920&q=80" alt="Green Garden Tirana Resort" class="w-full h-full object-cover object-center opacity-15 scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-patioLight via-patioLight/85 to-botanical-50/70"></div>
@@ -272,30 +283,43 @@
             <!-- Video Intro Section -->
             <div class="flex justify-center mx-auto mt-12">
                 <video controls autoplay muted loop playsinline webkit-playsinline
-                       class="w-[90%] md:w-[55%] h-auto [clip-path:inset(8%_0_0_0)]">
+                       class="w-[90%] md:w-[55%] h-auto">
                     <source src="green_garden_intro.mp4" type="video/mp4">
                     Váš prohlížeč nepodporuje přehrávání videa.
                 </video>
             </div>
 
+            <div class="flex flex-col items-center gap-2 mt-6 text-center">
+                <a href="https://www.instagram.com/greengarden__restaurant/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-botanical-800 hover:text-botanical-950 font-semibold text-sm transition">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    <span data-i18n="instagramFollow">Na ndiqni në Instagram</span>
+                    <span class="text-botanical-600">@greengarden__restaurant</span>
+                </a>
+                <p class="text-stone-500 text-sm max-w-md" data-i18n="instagramDesc">Eksploroni fotot dhe videot tona më të fundit, si dhe momente të paharrueshme nga Green Garden Resort.</p>
+            </div>
+
             <!-- Quick Feature Cards Grid -->
             <div class="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto text-left">
-                <div class="glass-card p-4 rounded-2xl border-l-4 border-l-botanical-600">
+                <div class="glass-card p-6 rounded-2xl border-l-4 border-l-botanical-600">
                     <i data-lucide="flame" class="w-6 h-6 text-amberGlow-600 mb-2"></i>
                     <div class="text-sm font-bold text-botanical-950" data-i18n="feature1Title">US Steakhouse & Traditë</div>
                     <div class="text-xs text-stone-600" data-i18n="feature1Desc">Mish dry-aged & fuzion shqiptar</div>
                 </div>
-                <div class="glass-card p-4 rounded-2xl border-l-4 border-l-botanical-600">
+                <div class="glass-card p-6 rounded-2xl border-l-4 border-l-botanical-600">
                     <i data-lucide="waves" class="w-6 h-6 text-botanical-600 mb-2"></i>
                     <div class="text-sm font-bold text-botanical-950" data-i18n="feature2Title">Pishina & Pool Bar</div>
                     <div class="text-xs text-stone-600" data-i18n="feature2Desc">Relaks, shezlongë & koktejle</div>
                 </div>
-                <div class="glass-card p-4 rounded-2xl border-l-4 border-l-botanical-600">
+                <div class="glass-card p-6 rounded-2xl border-l-4 border-l-botanical-600">
                     <i data-lucide="crown" class="w-6 h-6 text-amberGlow-600 mb-2"></i>
                     <div class="text-sm font-bold text-botanical-950" data-i18n="feature3Title">Sallon Privat</div>
                     <div class="text-xs text-stone-600" data-i18n="feature3Desc">Dasma, festa & ngjarje familjare</div>
                 </div>
-                <div class="glass-card p-4 rounded-2xl border-l-4 border-l-botanical-600">
+                <div class="glass-card p-6 rounded-2xl border-l-4 border-l-botanical-600">
                     <i data-lucide="baby" class="w-6 h-6 text-botanical-600 mb-2"></i>
                     <div class="text-sm font-bold text-botanical-950" data-i18n="feature4Title">Parajsë Familjare</div>
                     <div class="text-xs text-stone-600" data-i18n="feature4Desc">Kënd lojëras modern & qetësi</div>
@@ -306,7 +330,7 @@
     </section>
 
     <!-- About & Concept Section -->
-    <section id="about" class="py-24 bg-white relative border-t border-stone-200/60">
+    <section id="about" class="py-14 bg-white relative border-t border-stone-200/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 
@@ -384,7 +408,7 @@
     </section>
 
     <!-- Outdoor Swimming Pool & Bar Section -->
-    <section id="pool" class="py-24 bg-botanical-50/60 relative overflow-hidden border-t border-botanical-100">
+    <section id="pool" class="py-14 bg-botanical-50/60 relative overflow-hidden border-t border-botanical-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 
@@ -441,7 +465,7 @@
     </section>
 
     <!-- Menu Section: US Steakhouse Meets Traditional Albanian Cuisine -->
-    <section id="menu" class="py-24 bg-white relative border-t border-stone-200/60">
+    <section id="menu" class="py-14 bg-white relative border-t border-stone-200/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-10">
                 <span class="text-botanical-700 text-xs uppercase tracking-widest font-bold block mb-2" data-i18n="menuTag">Menuja Zyrtare</span>
@@ -490,15 +514,15 @@
             </div>
 
             <!-- Menu Grid Container -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="menuGrid">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="menuGrid">
                 
                 <!-- STARTERS & ANTIPASTA -->
                 <div class="menu-item md:col-span-2" data-category="starters">
                     <h3 class="text-2xl font-serif font-bold text-botanical-950 border-b-2 border-botanical-200 pb-2">Starter</h3>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle1">Bukë shpie me salca të ndryshme</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">200 ALL</span>
                     </div>
@@ -512,29 +536,29 @@
                     <h4 class="text-sm font-bold uppercase tracking-widest text-amberGlow-700" data-i18n="subheadDeti">DETI</h4>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle2">Sallat octapodi mesdhetare</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">950 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle3">Caserulo me prodhime deti ne furrë</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">950 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle4">Kallamar friture</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">800 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle5">Saganag me karkalec në salcë kremoze</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">1 200 ALL</span>
                     </div>
@@ -544,82 +568,82 @@
                     <h4 class="text-sm font-bold uppercase tracking-widest text-amberGlow-700" data-i18n="subheadToka">TOKA</h4>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle6">Pite e lezetuar</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">450 ALL</span>
                     </div>
                     <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc1">pite me perime, djath dele, vaj ulliri extra vergjine</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle7">Djath dhie në këmishë me pistak</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">450 ALL</span>
                     </div>
                     <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc2">nga baxhot e konispolit</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle8">Qofte kungulli me salcë menexhiku</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">500 ALL</span>
                     </div>
                     <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc3">kungull i njomë, vezë, djathë dele, koper</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle9">Kerpurdhe spinaq saute me krem qumeshti</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">650 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle10">Ajkë qumështi burata me pite pomodorini</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">850 ALL</span>
                     </div>
                     <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc5">petë me qumësht dhe vezë fshati</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle11">Bukë misri me ajkë kosi dhe gjalp</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">450 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle12">Caseruole me të brendshme vici</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">700 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle13">Xaxiq i shoqëruar me rucola dhe pomodorini</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">450 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle14">Byrek me qumësht për 3 persona</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">750 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle15">Palcë vici furre me kroste erëzash</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">700 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="starters">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle16">Antipasta GREEN GARDEN</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">1 800 ALL</span>
                     </div>
@@ -631,8 +655,8 @@
                     <h3 class="text-2xl font-serif font-bold text-botanical-950 border-b-2 border-botanical-200 pb-2" data-i18n="subheadNgaSkara">Nga Skara</h3>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Tomahawk Steak</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">4 500 ALL / Kg</span>
                     </div>
@@ -640,40 +664,40 @@
                     <span class="px-2.5 py-1 text-[10px] uppercase font-bold bg-amberGlow-100 text-amberGlow-800 rounded-md" data-i18n="badgeUsGrill">🔥 Premium US Grill</span>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Dry-Aged T-Bone Steak</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">4 500 ALL / Kg</span>
                     </div>
                     <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc12">Steak T-Bone i vjetruar me shije me lëng dhe aromë skare.</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Picanha</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">9 500 ALL / Kg</span>
                     </div>
                     <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc13">Prerje me cilësi të lartë e mishit të viçit Picanha i pjekur në skarë deri në përsosmëri.</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Grilled Beef Fillet with Vegetables</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">2 100 ALL</span>
                     </div>
                     <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc18">Fileto viçi në skarë me perime stine të pjekura.</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Grilled Tiger Shrimp</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">2 300 ALL</span>
                     </div>
                     <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc19">Karkaleca tigër të pjekur në skarë me qymyr druri.</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Cheeseburger with Onion Rings & Fries</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">1 300 ALL</span>
                     </div>
@@ -688,23 +712,23 @@
                     <h4 class="text-sm font-bold uppercase tracking-widest text-amberGlow-700" data-i18n="subheadDeti">DETI</h4>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle34">Koran furre</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">5 700 ALL / Kg</span>
                     </div>
                     <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc17">i gatuar sipas traditës me qepë dhe domate</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle35">Tavë levreku me perime për 2 persona</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">2 500 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle36">Salmon barbekju me perime</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">1 900 ALL</span>
                     </div>
@@ -714,23 +738,23 @@
                     <h4 class="text-sm font-bold uppercase tracking-widest text-amberGlow-700" data-i18n="subheadToka">TOKA</h4>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle37">Pancetë vici e furrës</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">4 700 ALL / Kg</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle38">Brisket texasi</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">5 500 ALL / Kg</span>
                     </div>
                     <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc14">gjoks vici i gatuar 7 orë në furrë</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle39">Mish qengji furre</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 900 ALL / Kg</span>
                     </div>
@@ -738,8 +762,8 @@
                     <span class="px-2.5 py-1 text-[10px] uppercase font-bold bg-botanical-100 text-botanical-800 rounded-md" data-i18n="badgeAlbanianTradition">🇦🇱 Traditë Shqiptare nga Furra</span>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="mains">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle40">Pulë në karbon</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 100 ALL</span>
                     </div>
@@ -751,37 +775,37 @@
                     <h4 class="text-sm font-bold uppercase tracking-widest text-amberGlow-700" data-i18n="subheadSalads">Sallata</h4>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle17">Sallatë Tradicionale</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">500 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle18">Sallatë Detox</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">550 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle19">Sallatë Cesar me pulë</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">580 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle20">Sallatë salmoni me mango avokado dhe fruta te thata</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">1 000 ALL</span>
                     </div>
                     <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc26">Sallatë me copëza salmoni, mango të pjekur, avokado dhe fruta të thara.</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle21">Sallatë GREEN GARDEN</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">1 000 ALL</span>
                     </div>
@@ -792,22 +816,22 @@
                     <h4 class="text-sm font-bold uppercase tracking-widest text-amberGlow-700" data-i18n="subheadSoups">Supat</h4>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle22">Perime të stinës</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">500 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle23">Supë peshku</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">700 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle24">Mishi i qartë</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">700 ALL</span>
                     </div>
@@ -817,31 +841,31 @@
                     <h4 class="text-sm font-bold uppercase tracking-widest text-amberGlow-700">Pasta</h4>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle25">Spageti me fruta deti</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">980 ALL</span>
                     </div>
                     <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc22">Spageti me fruta deti të freskëta dhe salcë të lehtë.</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle26">Pakeri me karkalec dhe kungull</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">900 ALL</span>
                     </div>
                     <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc24">Pasta paccheri me karkaleca dhe kungull të ri.</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle27">Ravioli me salcë tartufi</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">900 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle28">Papardelle me ragu viçi</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">900 ALL</span>
                     </div>
@@ -851,38 +875,38 @@
                     <h4 class="text-sm font-bold uppercase tracking-widest text-amberGlow-700">Risotto</h4>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle29">Risoto Milanese me burrata të freskët</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">1 050 ALL</span>
                     </div>
                     <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc21">Rizoto me shafran sipas stilit milanez me burrata të freskët.</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle30">Risotto tartufi</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">900 ALL</span>
                     </div>
                     <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc23">Rizoto e shkëlqyer me salcë gomole të zezë (truffle).</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle31">Risotto me prodhime deti paella për 2/3 persona</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">2 100 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle32">Risotto me mish për 2 persona</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">1 800 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pasta_risotto">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle33">Risotto e ditës</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">2 100 ALL</span>
                     </div>
@@ -894,47 +918,47 @@
                     <p class="text-stone-500 text-sm italic mt-1" data-i18n="noPorkNote">Picat tona nuk kanë nënprodukte derri</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pizza">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pizza">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle41">Pica Margarita</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">650 ALL</span>
                     </div>
                     <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc31">mocarela, salcë domate e freskët, grana, borzilok</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pizza">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pizza">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle42">Pica me Proshutë</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">700 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pizza">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pizza">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle43">Pica me Sallam Pikant ose Jo</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">750 ALL</span>
                     </div>
                     <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc29">salcë domate, mocarela, sallam pikant viçi, salcë kosi</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pizza">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pizza">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle44">Tono</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">800 ALL</span>
                     </div>
                     <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc35">mocarela, ton i freskët, qepë e kuqe, rigon</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pizza">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pizza">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle45">Kapricoza</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">800 ALL</span>
                     </div>
                     <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc30">proshutë, sallam, kërpudha, karcof, ullinj</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pizza">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pizza">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle46">Pizza Bianka</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">950 ALL</span>
                     </div>
@@ -942,8 +966,8 @@
                     <span class="px-2.5 py-1 text-[10px] uppercase font-bold bg-amberGlow-100 text-amberGlow-800 rounded-md" data-i18n="badgeNoPork">🍕 100% Beef & Poultry (No Pork)</span>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="pizza">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="pizza">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle47">Pizza Stromboli</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">1 000 ALL</span>
                     </div>
@@ -955,51 +979,51 @@
                     <h3 class="text-2xl font-serif font-bold text-botanical-950 border-b-2 border-botanical-200 pb-2" data-i18n="subheadEmbelsira">Ëmbëlsira</h3>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle48">Sultash</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">400 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle49">Sufle çokollate me akullore</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">700 ALL</span>
                     </div>
                     <p class="text-stone-600 text-sm mb-3" data-i18n="itemDesc32">Sufle e nxehtë me chocolatë me qendër të lëngshme dhe një top akullore vanilje.</p>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle50">Cheesecake</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">700 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle51">Tiramisu</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">700 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle52">Milefolie</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">700 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle53">Banana split me akullore</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">700 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle54">Fruta mix</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">600 ALL</span>
                     </div>
@@ -1009,29 +1033,29 @@
                     <h3 class="text-2xl font-serif font-bold text-botanical-950 border-b-2 border-botanical-200 pb-2" data-i18n="subheadPerFemije">Për Fëmijë</h3>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle55">Makarona me Gjalpë</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">400 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Makaroni in cheese</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">500 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle57">Miniburger me Patate të Skuqur</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">600 ALL</span>
                     </div>
                 </div>
 
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="desserts_kids">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle58">Fileto Pule Panë me Patate të Skuqura</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">600 ALL</span>
                     </div>
@@ -1041,110 +1065,110 @@
                 <div class="menu-item md:col-span-2" data-category="drinks">
                     <h4 class="text-sm font-bold uppercase tracking-widest text-amberGlow-700" data-i18n="subheadPijeFreskuese">Pije Freskuese</h4>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle59">Ujë Lajthiza Natyral 0.75 L</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">250 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle60">Ujë Lajthiza me Gaz 0.75 L</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">250 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Pepsi</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">200 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Pepsi 0</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">200 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle61">Fanta Portokall</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">200 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Arancata Exotic</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">200 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Seven Up</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">200 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle62">Ivi Limon</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">200 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle63">Ivi Portokall</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">200 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle64">Çaj Limoni</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">200 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle65">Çaj Pjeshke</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">200 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle66">Bravo Molle</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">240 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle67">Bravo Pjeshke</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">240 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle68">Bravo Luleshtrydhe</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">240 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Rose Arancate</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">450 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Tonik Bridvic</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">180 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle69">Lëng Portokalli i Shtrydhur</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">350 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Red Bull</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">350 ALL</span>
                     </div>
@@ -1152,32 +1176,32 @@
                 <div class="menu-item md:col-span-2 pt-2" data-category="drinks">
                     <h4 class="text-sm font-bold uppercase tracking-widest text-amberGlow-700" data-i18n="subheadBirra">Birra</h4>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Elbar</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">250 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Heineken</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">300 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Heineken 0%</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">300 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Paulaner Kristal</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">450 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle70">Paulaner Turbullt</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">480 ALL</span>
                     </div>
@@ -1185,62 +1209,62 @@
                 <div class="menu-item md:col-span-2 pt-2" data-category="drinks">
                     <h4 class="text-sm font-bold uppercase tracking-widest text-amberGlow-700" data-i18n="subheadTeNgrohta">Të Ngrohta</h4>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle71">Kafe</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">120 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle72">Kafe Turke</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">100 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle73">Makiato</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">120 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle74">Dekafeinato</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">160 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle75">Kapuçino</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">200 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle76">Kakao</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">200 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Salep</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">200 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle77">Çaj Bio</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">200 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Freddo Cappuccino</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">250 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle78">Freddo Ekspres</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">220 ALL</span>
                     </div>
@@ -1248,290 +1272,290 @@
                 <div class="menu-item md:col-span-2 pt-2" data-category="drinks">
                     <h4 class="text-sm font-bold uppercase tracking-widest text-amberGlow-700" data-i18n="subheadVereKuqe">Verë e Kuqe</h4>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">La Quinta Luna Montepulciano Dop</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">1 800 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Conte Rosso Piceno</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">2 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Merlot</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">2 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Cabernet IGT</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">2 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Khora Primivo Di Salento</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">2 200 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Governo Toscana</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">2 500 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Rosso di Montepulciano</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">2 200 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Chianti Riserva</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">2 500 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Passone</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">2 800 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Puglia Aglianico Primitivo</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">2 800 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Khora Primitivo Di Manduria</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">2 800 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Terre Siciliane Appassite Rosso</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Paralupi Appassimento</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Gran Appasso Rosso Aged in Oak</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Primitivo di Manduria Sua Maesta</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Primitivo del Salento 12 e mezzo</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Manduris Primitivo Di Manduria</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 300 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Primitivo di Manduria Villa Moura</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 500 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Lungarotti L'UM Rosso</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 500 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Treasure Primitivo Di Manduria</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 500 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Moreccio Bolgheri</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">4 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Roma Rosso</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 800 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Rosso di Orma</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">4 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Di Camillo Del Pojo Riserva Montepulciano Doc</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">4 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Negroamaro del Salento Rosone</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">4 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Diodice 3 Uve Rosso Puglia</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">4 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Papale Linea Oro Primitivo di Manduria</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">5 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Valpolicella Ripasso Superiore</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">4 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Filograno Primitivo di Manduria</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">4 800 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Lu Ceppu Negroamaro</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">5 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Piano Chiuso Riserva</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">6 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Donna Olimpia Bolgheri</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">6 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Passi di Orma</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">7 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Gigino Toscana Rosso</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">6 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Maharis</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">7 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Brunello di Montalcino Le Spinaie</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">8 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Antichello Amarone della Valpolicella Docg</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">8 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Il Fauno di Arcanum</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">12 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Brunello di Montalcino</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">22 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Barolo Perbacco</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">9 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Primitivo di Manduria Cosimo Varvaglione Collezione Privata</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">19 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Oreno Toscana</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">22 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Valpolicella Ripasso Superiore</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">2 300 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Khora Primitivo Di Manduria</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">1 500 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Khora Primitivo Di Salento</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">1 300 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle79">Verë e hapur e kuqe (gotë)</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">250 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle80">Verë e hapur e kuqe 0.5 L</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">500 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle81">Verë e hapur e kuqe 1 L</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">1 000 ALL</span>
                     </div>
@@ -1539,140 +1563,140 @@
                 <div class="menu-item md:col-span-2 pt-2" data-category="drinks">
                     <h4 class="text-sm font-bold uppercase tracking-widest text-amberGlow-700" data-i18n="subheadVereBardhe">Verë e Bardhë</h4>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Pinot Grigio</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">1 800 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Aurato Falerio Pecorino</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">2 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Prosecco Doc Extra Dry</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Chardonnay</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">1 800 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">PianOro Toscana</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">2 500 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Greco di Tufo 'Il Cavaliere'</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Rose Susumaniello</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 500 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Alturis Sauvignon</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 500 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Alturis Pinot Grigio</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 500 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Gewürztraminer</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 500 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Alturis Chardonnay</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 500 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Petit Chablis</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">5 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Donnaluce</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">5 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Pouilly-Fumé</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">9 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Franciacorta Satèn</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">10 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Lugana i Frati</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">5 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">'Aurente' Lungarotti 2019</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">8 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Eichhorn</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">12 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Pinot Grigio delle Venezie</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">1 300 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Chardonnay delle Venezie</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">1 300 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle82">Verë e hapur e bardhë (gotë)</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">250 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle83">Verë e hapur e bardhë 0.5 L</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">500 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950" data-i18n="itemTitle84">Verë e hapur e bardhë 1 L</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">1 000 ALL</span>
                     </div>
@@ -1680,38 +1704,38 @@
                 <div class="menu-item md:col-span-2 pt-2" data-category="drinks">
                     <h4 class="text-sm font-bold uppercase tracking-widest text-amberGlow-700" data-i18n="subheadVereShqiptare">Verë Shqiptare</h4>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Pulsi i Artë i Beratit</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">2 300 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Dodona</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">2 500 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Serina Rozë</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Serina e Zezë</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">4 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Shesh i Zi</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 000 ALL</span>
                     </div>
                 </div>
-                <div class="menu-item glass-card p-6 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
-                    <div class="flex justify-between items-start mb-2">
+                <div class="menu-item glass-card p-4 rounded-2xl hover:border-botanical-400 transition" data-category="drinks">
+                    <div class="flex justify-between items-start mb-1">
                         <h3 class="text-lg font-serif font-bold text-botanical-950">Shesh i Bardhë</h3>
                         <span class="text-botanical-700 font-bold font-serif text-lg">3 000 ALL</span>
                     </div>
@@ -1732,7 +1756,7 @@
     </section>
 
     <!-- Events & Private Venue Section -->
-    <section id="events" class="py-24 bg-patioLight relative border-t border-stone-200/60">
+    <section id="events" class="py-14 bg-patioLight relative border-t border-stone-200/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-botanical-700 text-xs uppercase tracking-widest font-bold block mb-2" data-i18n="eventsTag">Sallon i Veçantë për Ngjarje</span>
@@ -1800,7 +1824,7 @@
     </section>
 
     <!-- Family & Playground Section -->
-    <section id="family" class="py-24 bg-white relative border-t border-stone-200/60">
+    <section id="family" class="py-14 bg-white relative border-t border-stone-200/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 
@@ -1844,7 +1868,7 @@
     </section>
 
     <!-- Contact & Map Section -->
-    <section id="contact" class="py-24 bg-patioLight relative border-t border-stone-200/60">
+    <section id="contact" class="py-14 bg-patioLight relative border-t border-stone-200/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 
@@ -1922,11 +1946,16 @@
             </div>
 
             <form id="reservationForm" onsubmit="handleReservationSubmit(event)" class="space-y-4">
-                
+                <!-- Honeypot anti-spam field (hidden from real users) -->
+                <div class="absolute -left-[9999px]" aria-hidden="true">
+                    <label for="website">Website</label>
+                    <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                </div>
+
                 <!-- Zone Selector -->
                 <div>
                     <label class="block text-xs font-bold text-stone-700 mb-1.5" data-i18n="modalZoneLabel">Vendi / Zona në resort *</label>
-                    <select required class="w-full bg-patioLight border border-stone-300 rounded-xl px-3 py-2.5 text-xs sm:text-sm text-stone-800 focus:outline-none focus:border-botanical-600">
+                    <select name="zone" required class="w-full bg-patioLight border border-stone-300 rounded-xl px-3 py-2.5 text-xs sm:text-sm text-stone-800 focus:outline-none focus:border-botanical-600">
                         <option value="restaurant" data-i18n="modalOpt1">🥩 Restoranti Kryesor & Steakhouse</option>
                         <option value="pool" data-i18n="modalOpt2">🏊 Shezlongë pranë Pishinës & Pool Bar</option>
                         <option value="hall" data-i18n="modalOpt3">👑 Salloni i Veçantë (Dasma & Festa Familjare)</option>
@@ -1937,37 +1966,41 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                         <label class="block text-xs font-bold text-stone-700 mb-1" data-i18n="modalName">Emri dhe Mbiemri *</label>
-                        <input type="text" required placeholder="Emri Juaj" class="w-full bg-patioLight border border-stone-300 rounded-xl px-3 py-2.5 text-sm text-stone-800 focus:outline-none focus:border-botanical-600">
+                        <input type="text" name="name" required placeholder="Emri Juaj" class="w-full bg-patioLight border border-stone-300 rounded-xl px-3 py-2.5 text-sm text-stone-800 focus:outline-none focus:border-botanical-600">
                     </div>
                     <div>
                         <label class="block text-xs font-bold text-stone-700 mb-1" data-i18n="modalPhone">Telefoni *</label>
-                        <input type="tel" required placeholder="+355 69 123 4567" class="w-full bg-patioLight border border-stone-300 rounded-xl px-3 py-2.5 text-sm text-stone-800 focus:outline-none focus:border-botanical-600">
+                        <input type="tel" name="phone" required placeholder="+355 69 123 4567" class="w-full bg-patioLight border border-stone-300 rounded-xl px-3 py-2.5 text-sm text-stone-800 focus:outline-none focus:border-botanical-600">
                     </div>
                 </div>
 
                 <div>
                     <label class="block text-xs font-bold text-stone-700 mb-1">Email *</label>
-                    <input type="email" required placeholder="email@shembull.al" class="w-full bg-patioLight border border-stone-300 rounded-xl px-3 py-2.5 text-sm text-stone-800 focus:outline-none focus:border-botanical-600">
+                    <input type="email" name="email" required placeholder="email@shembull.al" class="w-full bg-patioLight border border-stone-300 rounded-xl px-3 py-2.5 text-sm text-stone-800 focus:outline-none focus:border-botanical-600">
                 </div>
 
                 <div class="grid grid-cols-3 gap-3">
                     <div>
                         <label class="block text-xs font-bold text-stone-700 mb-1" data-i18n="modalDate">Data *</label>
-                        <input type="date" required class="w-full bg-patioLight border border-stone-300 rounded-xl px-2 py-2.5 text-xs text-stone-800 focus:outline-none focus:border-botanical-600">
+                        <input type="date" name="date" required class="w-full bg-patioLight border border-stone-300 rounded-xl px-2 py-2.5 text-xs text-stone-800 focus:outline-none focus:border-botanical-600">
                     </div>
                     <div>
                         <label class="block text-xs font-bold text-stone-700 mb-1" data-i18n="modalTime">Ora *</label>
-                        <select required class="w-full bg-patioLight border border-stone-300 rounded-xl px-2 py-2.5 text-xs text-stone-800 focus:outline-none focus:border-botanical-600">
+                        <select name="time" required class="w-full bg-patioLight border border-stone-300 rounded-xl px-2 py-2.5 text-xs text-stone-800 focus:outline-none focus:border-botanical-600">
                             <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
                             <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
                             <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
                             <option value="19:00" selected>19:00</option>
-                            <option value="20:30">20:30</option>
+                            <option value="20:00">20:00</option>
                         </select>
                     </div>
                     <div>
                         <label class="block text-xs font-bold text-stone-700 mb-1" data-i18n="modalGuests">Numri i personave *</label>
-                        <select required class="w-full bg-patioLight border border-stone-300 rounded-xl px-2 py-2.5 text-xs text-stone-800 focus:outline-none focus:border-botanical-600">
+                        <select name="guests" required class="w-full bg-patioLight border border-stone-300 rounded-xl px-2 py-2.5 text-xs text-stone-800 focus:outline-none focus:border-botanical-600">
                             <option value="2" data-i18n="guestOpt1">2 persona</option>
                             <option value="4" data-i18n="guestOpt2">4 persona</option>
                             <option value="6" data-i18n="guestOpt3">6 persona</option>
@@ -1978,17 +2011,34 @@
 
                 <div>
                     <label class="block text-xs font-bold text-stone-700 mb-1" data-i18n="modalNote">Shënime / Lloji i ngjarjes / Kërkesa</label>
-                    <textarea rows="2" placeholder="Detaje mbi festën ose kërkesat tuaja..." class="w-full bg-patioLight border border-stone-300 rounded-xl px-3 py-2 text-sm text-stone-800 focus:outline-none focus:border-botanical-600"></textarea>
+                    <textarea name="notes" rows="2" placeholder="Detaje mbi festën ose kërkesat tuaja..." class="w-full bg-patioLight border border-stone-300 rounded-xl px-3 py-2 text-sm text-stone-800 focus:outline-none focus:border-botanical-600"></textarea>
                 </div>
 
-                <button type="submit" class="w-full py-3.5 bg-botanical-700 hover:bg-botanical-800 text-white font-semibold rounded-xl text-sm shadow-md transition duration-200 mt-2" data-i18n="modalSubmit">
+                <button type="submit" id="reservationSubmitBtn" class="w-full py-3.5 bg-botanical-700 hover:bg-botanical-800 text-white font-semibold rounded-xl text-sm shadow-md transition duration-200 mt-2 disabled:opacity-60 disabled:cursor-not-allowed" data-i18n="modalSubmit">
                     Dërgo Rezervimin
                 </button>
+
+                <p class="text-center text-xs text-stone-500 mt-2" data-i18n="modalCallAlt">Mund të bëni rezervim edhe duke telefonuar në <a href="tel:+355698090010" class="text-botanical-700 font-semibold hover:underline">+355 69 809 0010</a></p>
             </form>
         </div>
     </div>
 
     <!-- Booking Unavailable Modal -->
+    <!-- Reservation Success Modal -->
+    <div id="reservationSuccessModal" class="fixed inset-0 z-50 bg-stone-900/60 hidden items-center justify-center p-4 backdrop-blur-sm">
+        <div class="bg-white border border-stone-200 rounded-3xl p-6 sm:p-8 max-w-md w-full relative shadow-2xl text-center">
+            <button onclick="closeModal('reservationSuccessModal')" class="absolute top-5 right-5 text-stone-400 hover:text-stone-800 p-2" aria-label="Mbyll">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <div class="w-14 h-14 rounded-full bg-botanical-100 text-botanical-700 flex items-center justify-center mx-auto mb-4">
+                <i data-lucide="check-circle-2" class="w-7 h-7"></i>
+            </div>
+            <p class="text-stone-900 text-base font-bold mb-2" data-i18n="reservationSuccessTitle">Rezervimi u dërgua me sukses!</p>
+            <p class="text-stone-600 text-sm leading-relaxed" data-i18n="reservationSuccessText">Faleminderit!</p>
+        </div>
+    </div>
+
+    <!-- Booking Unavailable / Error Fallback Modal -->
     <div id="bookingUnavailableModal" class="fixed inset-0 z-50 bg-stone-900/60 hidden items-center justify-center p-4 backdrop-blur-sm">
         <div class="bg-white border border-stone-200 rounded-3xl p-6 sm:p-8 max-w-md w-full relative shadow-2xl text-center">
             <button onclick="closeModal('bookingUnavailableModal')" class="absolute top-5 right-5 text-stone-400 hover:text-stone-800 p-2" aria-label="Mbyll">
@@ -2103,6 +2153,8 @@
                 btnCall: "Thirr",
                 btnReserveShort: "Rezervim",
                 heroBadge: "Tiranë, Shqipëri • Resort Ekskluziv Gastronomik me Pishinë",
+                instagramFollow: "Na ndiqni në Instagram",
+                instagramDesc: "Eksploroni fotot dhe videot tona më të fundit, si dhe momente të paharrueshme nga Green Garden Resort.",
                 amenityWifi: "Wi-Fi Falas",
                 amenityAC: "Ajër i Kondicionuar",
                 amenityFamily: "Miqësor për Familjen",
@@ -2330,6 +2382,9 @@
                 guestOpt4: "Festë / Grup (10+)",
                 modalNote: "Shënime / Lloji i ngjarjes / Kërkesa",
                 modalSubmit: "Dërgo Rezervimin",
+                modalCallAlt: "Mund të bëni rezervim edhe duke telefonuar në <a href=\"tel:+355698090010\" class=\"text-botanical-700 font-semibold hover:underline\">+355 69 809 0010</a>",
+                reservationSuccessTitle: "Rezervimi u dërgua me sukses!",
+                reservationSuccessText: "Faleminderit!",
                 bookingUnavailableText: "Rezervimet online nuk janë përkohësisht të disponueshme, ju lutemi bëni një rezervim duke telefonuar në +355 69 809 0010 ose me email në restaurant@greengarden.al",
                 footerSub: "Tiranë, Shqipëri • US Steakhouse & Albanian Heritage",
                 footerRights: "Të gjitha të drejtat e rezervuara."
@@ -2352,6 +2407,8 @@
                 btnCall: "Call Us",
                 btnReserveShort: "Book Table",
                 heroBadge: "Tirana, Albania • Exclusive Culinary Resort with Pool",
+                instagramFollow: "Follow us on Instagram",
+                instagramDesc: "Explore our latest photos, videos, and unforgettable moments from Green Garden Resort.",
                 amenityWifi: "Free Wi-Fi",
                 amenityAC: "Air Conditioned",
                 amenityFamily: "Family Friendly",
@@ -2579,6 +2636,9 @@
                 guestOpt4: "Party / Group (10+ Guests)",
                 modalNote: "Notes / Event Type / Special Requests",
                 modalSubmit: "Submit Reservation Request",
+                modalCallAlt: "You can also make a reservation by calling <a href=\"tel:+355698090010\" class=\"text-botanical-700 font-semibold hover:underline\">+355 69 809 0010</a>",
+                reservationSuccessTitle: "Reservation sent successfully!",
+                reservationSuccessText: "Thank you!",
                 bookingUnavailableText: "Online booking is temporarily unavailable, please make a reservation by calling +355 69 809 0010 or by email at restaurant@greengarden.al",
                 footerSub: "Tirana, Albania • US Steakhouse & Albanian Heritage",
                 footerRights: "All rights reserved."
@@ -2679,9 +2739,37 @@
         // Reservation Form Submission
         function handleReservationSubmit(e) {
             e.preventDefault();
-            closeModal('reservationModal');
-            openModal('bookingUnavailableModal');
-            document.getElementById('reservationForm').reset();
+            const form = e.target;
+            const submitBtn = document.getElementById('reservationSubmitBtn');
+            const originalBtnText = submitBtn.textContent;
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = '...';
+
+            const formData = new FormData(form);
+
+            fetch('send-reservation.php', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json().catch(() => ({ success: false })))
+                .then(data => {
+                    closeModal('reservationModal');
+                    if (data && data.success) {
+                        openModal('reservationSuccessModal');
+                        form.reset();
+                    } else {
+                        openModal('bookingUnavailableModal');
+                    }
+                })
+                .catch(() => {
+                    closeModal('reservationModal');
+                    openModal('bookingUnavailableModal');
+                })
+                .finally(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalBtnText;
+                });
         }
     </script>
 </body>
